@@ -1,0 +1,169 @@
+.gamburger-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+  background-color: $color-header-bg;
+}
+
+.gamburger-menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.gamburger-menu__button span {
+  position: relative;
+  width: 20px;
+  border: 1px solid $nav-color;
+  background-color: $nav-color;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -6px;
+    left: -1px;
+    width: 20px;
+    border: 1px solid $nav-color;
+    background-color: $nav-color;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -6px;
+    left: -1px;
+    width: 12px;
+    border: 1px solid $nav-color;
+    background-color: $nav-color;
+  }
+}
+
+.gamburger-menu__cart {
+  display: block;
+  padding: 18px;
+}
+
+.gamburger-menu__logo {
+  //   width: 55px;
+  //   height: 50px;
+  //   background-image: url(../../images/logo-text.svg),
+  //     url(../../images/logo-head.svg), url(../../images/logo-batterfly.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: center 80%, top center, bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamburger-menu__logo-head {
+  position: relative;
+}
+
+.gamburger-menu__logo-batterfly {
+  position: absolute;
+  top: 56px;
+}
+
+.gamburger-menu__logo-text {
+  position: absolute;
+  top: 30px;
+}
+
+.navigation {
+  background-color: $color-header-bg;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.navigation__close {
+  margin-bottom: 21px;
+  border: none;
+  background: transparent;
+}
+
+.navigation__list {
+  border-bottom: 1px solid $color-menu-border;
+}
+
+.navigation__item {
+  text-align: center;
+  border-top: 1px solid $color-menu-border;
+}
+
+.navigation__link {
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $nav-color;
+}
+
+.navigation__services {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $color-menu-border;
+}
+
+.navigation__item-service {
+  text-align: center;
+}
+
+.navigation__link-service {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $header-color;
+}
+
+.navigation__item-contacts {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.navigation__link-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 11px;
+  padding-top: 14px;
+  //   vertical-align: middle;
+  & img {
+    margin-right: 13px;
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.round-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  color: $color-accent_text;
+  background-color: $color-accent;
+  border-radius: 50%;
+}

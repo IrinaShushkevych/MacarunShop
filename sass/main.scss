@@ -1,0 +1,11 @@
+@import './commons/normalize';
+@import './commons/fonts';
+@import './utils/variables';
+@import './components/container';
+@import './components/buttons';
+@import './layouts/header';
+@import './layouts/hero';
+
+body {
+  font-family: serif;
+}
