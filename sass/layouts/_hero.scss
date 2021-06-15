@@ -1,0 +1,31 @@
+.hero__title {
+  font-weight: 600;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 11px;
+}
+
+.hero__text {
+  color: $color-text-primary;
+  font-size: 14px;
+  &--uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+}
+
+.hero__line {
+  margin-left: 4px;
+  margin-right: 4px;
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: $nav-color;
+}

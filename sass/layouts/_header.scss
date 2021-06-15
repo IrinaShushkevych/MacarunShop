@@ -7,52 +7,108 @@
 }
 
 .gamburger-menu__button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px;
+  padding: 18px 40px;
+  //   padding: 18px;
   cursor: pointer;
 }
 
-.gamburger-menu__button span {
-  position: relative;
+// .gamburger-menu__block-icon {
+//   position: relative;
+//   width: 20px;
+//   height: 14px;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.gamburger-menu__icon {
+  position: absolute;
   width: 20px;
+  top: 50%;
+  left: 50%;
+  height: 1.5px;
   border: 1px solid $nav-color;
   background-color: $nav-color;
-  &::before {
-    content: '';
+  transform: translateX(-50%);
+  transition: 250ms linear;
+  &--top {
     position: absolute;
-    display: block;
-    top: -6px;
-    left: -1px;
-    width: 20px;
-    border: 1px solid $nav-color;
-    background-color: $nav-color;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  &::after {
-    content: '';
+  &--bottom {
     position: absolute;
-    display: block;
-    bottom: -6px;
-    left: -1px;
     width: 12px;
-    border: 1px solid $nav-color;
-    background-color: $nav-color;
+    top: 65%;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-83%);
+  }
+
+  .gamburger-menu__checkbox:checked ~ & {
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .gamburger-menu__checkbox:checked ~ &--top {
+    transform: translate(-50%, 260%) rotate(-45deg);
+  }
+  .gamburger-menu__checkbox:checked ~ &--bottom {
+    opacity: 0;
   }
 }
+// .gamburger-menu__icon {
+//   position: relative;
+//   width: 20px;
+//   border: 1px solid $nav-color;
+//   background-color: $nav-color;
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     top: -6px;
+//     left: -1px;
+//     width: 20px;
+//     border: 1px solid $nav-color;
+//     background-color: $nav-color;
+//   }
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     bottom: -6px;
+//     left: -1px;
+//     width: 12px;
+//     border: 1px solid $nav-color;
+//     background-color: $nav-color;
+//   }
+// }
 
 .gamburger-menu__cart {
+  position: relative;
   display: block;
   padding: 18px;
 }
 
+.gamburger-menu__order {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  width: 13px;
+  height: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $color-accent_text;
+  background-color: $nav-color;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
 .gamburger-menu__logo {
-  //   width: 55px;
-  //   height: 50px;
-  //   background-image: url(../../images/logo-text.svg),
-  //     url(../../images/logo-head.svg), url(../../images/logo-batterfly.svg);
-  //   background-repeat: no-repeat;
-  //   background-position: center 80%, top center, bottom center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,12 +128,22 @@
   top: 30px;
 }
 
+.gamburger-menu__checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
 .navigation {
+  display: none;
   background-color: $color-header-bg;
   padding-left: 19px;
   padding-right: 19px;
   padding-top: 20px;
   padding-bottom: 12px;
+  &.is-open {
+    display: block;
+  }
 }
 
 .navigation__close {
