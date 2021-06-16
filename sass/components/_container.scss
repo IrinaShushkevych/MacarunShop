@@ -13,24 +13,7 @@
 
   .hero & {
     text-align: center;
-    padding: 65px 24px 328px 24px;
-    background-image: url(../../images/hero-heart.png),
-      url(../../images/hero-macaroon.png), url(../../images/hero-macaroon1.png),
-      url(../../images/hero-macaroon2.png), url(../../images/hero-macaroon3.png),
-      url(../../images/hero-macaroon4.png),
-      url(../../images/hero-green-small.png),
-      url(../../images/hero-green-big.png), url(../../images/hero-nut.png),
-      url(../../images/hero-nut1.png), url(../../images/hero-nut2.png),
-      url(../../images/hero-nut3.png), url(../../images/hero-nut4.png),
-      url(../../images/hero-nut5.png), url(../../images/hero-blue.png),
-      url(../../images/hero-blue-small.png),
-      url(../../images/hero-blue-small-light.png),
-      url(../../images/hero-blue-small-light.png),
-      url(../../images/hero-pink.png);
-    background-repeat: no-repeat;
-    background-position: 50% 90%, 11% 60%, 1% 85%, 50% 100%, 100% 90%, 94% 57%,
-      94% 68%, 20% 95%, 8% 70%, 10% 90%, 36% 93%, 80% 94%, 92% 79%, 43% 57%,
-      850% 150%, 60% 85%, -600% 70%, -50% 140%, 10% 110%;
+    padding: 65px 24px 0 24px;
   }
 
   .section-menu & {
