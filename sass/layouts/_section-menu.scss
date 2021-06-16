@@ -1,0 +1,20 @@
+.section-menu__item {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $menu-border;
+}
+
+.section-menu__link {
+  margin-left: auto;
+}
+
+.section-menu__text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section-menu__icon {
+  width: 12px;
+  height: 8px;
+}

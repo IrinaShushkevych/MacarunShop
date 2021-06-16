@@ -1,0 +1,30 @@
+.celebrated__item {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.celebrated__block-icon {
+  position: relative;
+  width: 58px;
+  height: 45px;
+}
+
+.celebrated__text {
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.celedrated__img {
+  &--absolut {
+    position: absolute;
+    top: -80%;
+    right: -30%;
+  }
+}

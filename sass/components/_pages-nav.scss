@@ -1,0 +1,21 @@
+.pages-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.pages-nav__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.pages-nav__button {
+  width: 12px;
+  height: 12px;
+  border: 1px solid $border-color;
+  background: transparent;
+  &--active {
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
+}

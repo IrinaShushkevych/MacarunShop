@@ -3,12 +3,35 @@
 @import './utils/variables';
 @import './components/container';
 @import './components/buttons';
+@import './components/pages-nav';
+@import './components/social-list';
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/section-menu';
+@import './layouts/promotions';
+@import './layouts/section-celebrated';
+@import './layouts/section-sets';
+@import './layouts/section-instagram';
+@import './layouts/section-advantages';
+@import './layouts/footer';
 
 body {
-  font-family: Montserrat, serif;
+  font-family: $font;
   font-weight: 400;
   font-style: normal;
+  font-size: 10px;
   line-height: 1.2;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 17px;
+  .section-celebrated & {
+    margin-bottom: 46px;
+  }
+  .section-sets & {
+    padding-bottom: 19px;
+  }
 }

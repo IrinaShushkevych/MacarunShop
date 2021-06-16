@@ -3,8 +3,13 @@
 
   width: 320px;
   margin: 0 auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  header & {
+    position: relative;
+    padding: 0;
+  }
 
   .hero & {
     text-align: center;
@@ -26,6 +31,43 @@
     background-position: 50% 90%, 11% 60%, 1% 85%, 50% 100%, 100% 90%, 94% 57%,
       94% 68%, 20% 95%, 8% 70%, 10% 90%, 36% 93%, 80% 94%, 92% 79%, 43% 57%,
       850% 150%, 60% 85%, -600% 70%, -50% 140%, 10% 110%;
+  }
+
+  .section-menu & {
+    padding-bottom: 19px;
+  }
+
+  .promotions & {
+    padding-bottom: 30px;
+    padding-top: 19px;
+  }
+
+  .section-celebrated & {
+    padding-top: 30px;
+    padding-bottom: 11px;
+  }
+
+  .section-sets & {
+    padding-top: 11px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-instagram & {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .section_advantages & {
+    padding-top: 25px;
+    padding-bottom: 47px;
+  }
+
+  .footer & {
+    padding-top: 33px;
+    padding-bottom: 53px;
+    background-color: $footer-bg;
   }
 }
 

@@ -136,6 +136,10 @@
 
 .navigation {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   background-color: $color-header-bg;
   padding-left: 19px;
   padding-right: 19px;
@@ -208,16 +212,6 @@
   & img {
     margin-right: 13px;
   }
-}
-
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 20px;
 }
 
 .round-block {

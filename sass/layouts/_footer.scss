@@ -1,0 +1,47 @@
+.footer {
+  font-family: $font-accent;
+}
+
+.footer-advantages__list {
+  display: flex;
+  margin-bottom: 52px;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.footer-advantages__icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  margin-right: 10px;
+}
+
+.footer-advantages__list-text {
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-copyright__phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  text-align: right;
+}
+
+.footer-copyright__text {
+  font-size: 10px;
+  opacity: 0.7;
+  &--right {
+    text-align: right;
+  }
+}

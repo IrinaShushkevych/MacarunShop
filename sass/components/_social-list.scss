@@ -1,0 +1,23 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__item {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .footer & {
+    background-color: $color-accent_text;
+  }
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
