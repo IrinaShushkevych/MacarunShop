@@ -13,16 +13,16 @@
   &--first {
     // height: calc(100% + 100px);
     // z-index: -1;
-    // background-image: url(../../images/promotion1.jpg);
+    // background-image: url(../images/promotion1.jpg);
   }
   &--second {
     display: none;
-    // background-image: url(../../images/promotion2.jpg);
+    // background-image: url(../images/promotion2.jpg);
   }
 
   &--third {
     display: none;
-    // background-image: url(../../images/promotion3.jpg);
+    // background-image: url(../images/promotion3.jpg);
     // padding-top: 239px;
   }
 
@@ -30,7 +30,7 @@
     display: none;
     padding-top: 239px;
     background-color: #ffb84e;
-    // background-image: url(../../images/promotion4.png);
+    // background-image: url(../images/promotion4.png);
     // background-position: top center;
   }
 }
