@@ -474,7 +474,7 @@ header .container {
 .gamburger-menu__icon--bottom {
   position: absolute;
   width: 12px;
-  top: 65%;
+  top: 67%;
   left: 50%;
   opacity: 1;
   -webkit-transform: translateX(-83%);
