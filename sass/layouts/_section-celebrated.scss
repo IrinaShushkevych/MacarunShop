@@ -1,8 +1,24 @@
+.celebrated {
+  // background-image: url(../../images/dotter-line.svg);
+  // background-repeat: no-repeat;
+  // background-position: 8% 10%;
+}
+
 .celebrated__item {
+  position: relative;
   display: flex;
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.celebrated__line {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  height: 300%;
+  width: 2px;
+  background-image: url(../../images/dotter-line.svg);
 }
 
 .celebrated__block-icon {

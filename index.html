@@ -16,9 +16,10 @@
     <header>
       <div class="container">
         <div class="gamburger-menu">
-          <label class="gamburger-menu__button">
+          <label class="gamburger-menu__button" for="gamburger-menu-input">
             <input
               type="checkbox"
+              id="gamburger-menu-input"
               class="gamburger-menu__checkbox"
               data-menu-button
             />
@@ -60,14 +61,6 @@
           </a>
         </div>
         <nav class="navigation" data-menu>
-          <!-- <button class="navigation__close" type="button">
-            <img
-              src="./images/close.svg"
-              alt="закрыть"
-              width="18"
-              height="18"
-            />
-          </button> -->
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="" class="navigation__link">Готовые наборы</a>
@@ -177,9 +170,9 @@
             Пирожные макарон и другие десерты из натуральных ингредиентов,
             приготовленные с любовью
           </p>
-          
+          <div class="block-img"></div>
         </div>
-        <div class="block-img"></div>
+        
       </section>
       <section class="section-menu">
         <div class="container">
@@ -242,9 +235,9 @@
           <h2 class="section-title">Акции</h2>
           <ul class="promotions__list">
             <li class="promotions__item promotions__item--first">
-              <!-- <img src="./images/promotion1.jpg" alt="" class="promotion__img" /> -->
-              <!-- <div class="promotions__card"></div> -->
-              <div class="promotions__card">
+              <img src="./images/promotion1.jpg" alt="" class="promotion__img" />
+              <div class="promotions__block-card">
+                <div class="promotions__card">
                 <h3 class="promotions__card-title">НОВИНКА</h3>
                 <p class="promotions__card-text">
                   Супербольшие наборы
@@ -252,10 +245,10 @@
                   от 1000 Рублей
                 </p>
               </div>
+              </div>
             </li>
             <li class="promotions__item promotions__item--second">
-              <!-- <img src="./images/promotion2.jpg" alt="" class="promotion__img" /> -->
-              <!-- <div class="promotions__card"></div> -->
+              <img src="./images/promotion2.jpg" alt="" class="promotion__img" />
               <div class="promotions__card">
                 <h3 class="promotions__card-title">АКЦИЯ</h3>
                 <p class="promotions__card-text">
@@ -266,8 +259,7 @@
               </div>
             </li>
             <li class="promotions__item promotions__item--third">
-              <!-- <img src="./images/promotion3.jpg" alt="" class="promotion__img" /> -->
-              <!-- <div class="promotions__card"></div> -->
+              <img src="./images/promotion3.jpg" alt="" class="promotion__img" />
               <div class="promotions__card">
                 <h3 class="promotions__card-title">АКЦИЯ</h3>
                 <p class="promotions__card-text">
@@ -278,8 +270,7 @@
               </div>
             </li>
             <li class="promotions__item promotions__item--fourth">
-              <!-- <img src="./images/promotion4.png" alt="" class="promotion__img" /> -->
-              <!-- <div class="promotions__card"></div> -->
+              <img src="./images/promotion4.png" alt="" class="promotion__img" />
               <div class="promotions__card">
                 <h3 class="promotions__card-title">НОВИНКА</h3>
                 <p class="promotions__card-text">
@@ -311,6 +302,7 @@
           <h2 class="section-title">Ближайшие праздники</h2>
           <ul class="celebrated">
             <li class="celebrated__item">
+              <div class="celebrated__line"></div>
               <div class="celebrated__block-icon">
                 <img
                   src="./images/macaroon-orange.png"

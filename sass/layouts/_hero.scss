@@ -31,7 +31,12 @@
 }
 
 .block-img {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 300px;
+  width: 320px;
   background-image: url(../../images/hero-heart.png),
     url(../../images/hero-macaroon.png), url(../../images/hero-macaroon1.png),
     url(../../images/hero-macaroon2.png), url(../../images/hero-macaroon3.png),
