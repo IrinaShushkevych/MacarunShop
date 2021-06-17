@@ -422,6 +422,14 @@ header .container {
   margin-right: 10px;
 }
 
+.social-list__link:hover, .social-list__link:focus {
+  color: #e7426a;
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
+
 .gamburger-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +601,11 @@ header .container {
   text-transform: uppercase;
   color: #2b1414;
 }
+.navigation__link:hover, .navigation__link:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7426a;
+          text-decoration-color: #e7426a;
+}
 
 .navigation__services {
   padding-top: 13px;
@@ -611,6 +624,11 @@ header .container {
   font-size: 14px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.79);
+}
+.navigation__link-service:hover, .navigation__link-service:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7426a;
+          text-decoration-color: #e7426a;
 }
 
 .navigation__item-contacts {
@@ -635,6 +653,11 @@ header .container {
 }
 .navigation__link-contacts img {
   margin-right: 13px;
+}
+.navigation__link-contacts:hover, .navigation__link-contacts:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7426a;
+          text-decoration-color: #e7426a;
 }
 
 .round-block {

@@ -21,3 +21,14 @@
     margin-right: 10px;
   }
 }
+
+.social-list__link {
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
