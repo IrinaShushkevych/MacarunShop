@@ -1,20 +1,133 @@
+.section-menu__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -25px;
+  }
+}
+
 .section-menu__item {
-  display: flex;
+  // display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid $menu-border;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 37px 55px 34px;
+    width: calc((100% - 30px) / 2);
+    &:nth-child(2n - 1) {
+      margin-right: 30px;
+    }
+    outline: 1px solid blue;
+
+    &--first {
+      background-color: #ffdbc3;
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3) 50%,
+        #ffdbc3 50%
+      );
+    }
+
+    &--second {
+      background-color: #ffc2cc;
+      background-image: linear-gradient(
+        to bottom left,
+        rgba(255, 255, 255, 0.3) 50%,
+        #ffc2cc 50%
+      );
+    }
+
+    &--third {
+      background-color: #b4eab3;
+      background-image: linear-gradient(
+        to bottom left,
+        #b4eab3 50%,
+        rgba(255, 255, 255, 0.3) 50%
+      );
+    }
+
+    &--fourth {
+      background-color: #fdd5cd;
+      background-image: linear-gradient(
+        to bottom right,
+        #fdd5cd 50%,
+        rgba(255, 255, 255, 0.3) 50%
+      );
+    }
+
+    &--fifth {
+      background-color: #a8dcdf;
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3) 50%,
+        #a8dcdf 50%
+      );
+    }
+
+    &--sixth {
+      background-color: #c4c6ec;
+      background-image: linear-gradient(
+        to bottom left,
+        rgba(255, 255, 255, 0.3) 50%,
+        #c4c6ec 50%
+      );
+    }
+  }
 }
 
-.section-menu__link {
-  margin-left: auto;
+.section-menu__block-icon {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
+.section-menu__block-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+.section-menu__block-text {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+// .section-menu__link {
+//   margin-left: auto;
+// }
 
 .section-menu__text {
   font-weight: 600;
   font-size: 14px;
+  margin-right: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .section-menu__icon {
   width: 12px;
   height: 8px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 10px;
+  }
 }

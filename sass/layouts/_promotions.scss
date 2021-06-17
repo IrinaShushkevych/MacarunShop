@@ -1,5 +1,9 @@
 .promotions__list {
   padding-bottom: 22px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .promotions__item {
@@ -28,10 +32,23 @@
 
   &--fourth {
     display: none;
-    padding-top: 239px;
+    padding-top: 10px;
     background-color: #ffb84e;
     // background-image: url(../images/promotion4.png);
     // background-position: top center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+    height: 450px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &--second,
+    &--third,
+    &--fourth {
+      display: block;
+    }
   }
 }
 
