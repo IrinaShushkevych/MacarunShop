@@ -306,8 +306,7 @@ summary {
 .container {
   outline: 1px solid tomato;
   width: 100vw;
-  min-width: 320px;
-  max-width: 1400px;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -358,6 +357,9 @@ header .container {
   background-color: #ebedee;
 }
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
   .hero .container {
     text-align: center;
     padding: 0 218px 0 0;
@@ -378,6 +380,13 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .pages-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .pages-nav__item:not(:last-child) {
@@ -1104,6 +1113,28 @@ header .container {
   }
 }
 
+.section-menu__block-icon {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .section-menu__block-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .promotions__list {
   padding-bottom: 22px;
 }
@@ -1267,10 +1298,13 @@ header .container {
   margin-right: 8px;
 }
 
+.sets__block-img {
+  padding: 9px 8px 11px;
+}
+
 .sets__img {
-  margin: 9px 8px 11px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .sets__title {
