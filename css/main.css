@@ -1168,7 +1168,7 @@ header .container {
 @media screen and (min-width: 1200px) {
   .promotions__item {
     width: calc((100% - 3 * 30px) / 4);
-    height: 450px;
+    height: 400px;
   }
   .promotions__item:not(:last-child) {
     margin-right: 30px;
@@ -1215,6 +1215,8 @@ header .container {
   background-color: #ffb84e;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5.46%, rgba(242, 155, 53, 0)), color-stop(39.41%, #f29b35));
   background-image: linear-gradient(180deg, rgba(242, 155, 53, 0) 5.46%, #f29b35 39.41%);
+  height: 190px;
+  padding-top: 75px;
 }
 
 .promotions__card-title {
