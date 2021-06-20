@@ -511,31 +511,36 @@ header .container {
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
-.gamburger-menu__icon--top {
+.gamburger-menu__icon::before {
+  content: "";
   position: absolute;
-  top: 35%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  display: block;
+  top: -6px;
+  left: -1px;
+  width: 20px;
+  border: 1px solid #2b1414;
+  background-color: #2b1414;
 }
-.gamburger-menu__icon--bottom {
+.gamburger-menu__icon::after {
+  content: "";
   position: absolute;
+  display: block;
+  bottom: -6px;
+  left: -1px;
   width: 12px;
-  top: 67%;
-  left: 50%;
-  opacity: 1;
-  -webkit-transform: translateX(-83%);
-          transform: translateX(-83%);
+  border: 1px solid #2b1414;
+  background-color: #2b1414;
 }
 .gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon {
   -webkit-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
 }
-.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon--top {
-  -webkit-transform: translate(-50%, 260%) rotate(-45deg);
-          transform: translate(-50%, 260%) rotate(-45deg);
+.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: -1px;
 }
-.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon--bottom {
+.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon::after {
   opacity: 0;
 }
 
@@ -663,14 +668,14 @@ header .container {
   top: 100%;
   left: 0;
   width: 100%;
-  opacity: 0;
+  visibility: hidden;
   z-index: 1;
 }
 .navigation.is-open {
   display: block;
 }
 .gamburger-menu__checkbox:checked ~ .navigation {
-  opacity: 1;
+  visibility: visible;
 }
 @media screen and (min-width: 1200px) {
   .navigation {

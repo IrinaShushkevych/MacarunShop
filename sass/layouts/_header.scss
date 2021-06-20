@@ -48,30 +48,62 @@
   background-color: $nav-color;
   transform: translateX(-50%);
   transition: 250ms linear;
-  &--top {
+  &::before {
+    content: '';
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    top: -6px;
+    left: -1px;
+    width: 20px;
+    border: 1px solid $nav-color;
+    background-color: $nav-color;
   }
-  &--bottom {
+  &::after {
+    content: '';
     position: absolute;
+    display: block;
+    bottom: -6px;
+    left: -1px;
     width: 12px;
-    top: 67%;
-    left: 50%;
-    opacity: 1;
-    transform: translateX(-83%);
+    border: 1px solid $nav-color;
+    background-color: $nav-color;
   }
 
   .gamburger-menu__checkbox:checked ~ .gamburger-menu__button & {
     transform: translateX(-50%) rotate(45deg);
   }
-  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--top {
-    transform: translate(-50%, 260%) rotate(-45deg);
+  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &::before {
+    transform: rotate(90deg);
+    top: -1px;
   }
-  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--bottom {
+  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &::after {
     opacity: 0;
   }
+
+  // &--top {
+  //   position: absolute;
+  //   top: 35%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+  // &--bottom {
+  //   position: absolute;
+  //   width: 12px;
+  //   top: 67%;
+  //   left: 50%;
+  //   opacity: 1;
+  //   transform: translateX(-83%);
+  // }
+
+  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button & {
+  //   transform: translateX(-50%) rotate(45deg);
+  // }
+  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--top {
+  //   transform: translate(-50%, 260%) rotate(-45deg);
+  // }
+  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--bottom {
+  //   opacity: 0;
+  // }
 }
 // .gamburger-menu__icon {
 //   position: relative;
@@ -201,7 +233,8 @@
   top: 100%;
   left: 0;
   width: 100%;
-  opacity: 0;
+  // opacity: 0;
+  visibility: hidden;
   z-index: 1;
   // background-color: $color-header-bg;
   // padding-left: 19px;
@@ -213,7 +246,8 @@
   }
 
   .gamburger-menu__checkbox:checked ~ & {
-    opacity: 1;
+    // opacity: 1;
+    visibility: visible;
   }
 
   @media screen and (min-width: 1200px) {
