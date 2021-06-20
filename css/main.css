@@ -312,7 +312,6 @@ summary {
   padding-right: 15px;
 }
 header .container {
-  position: relative;
   padding: 0;
   padding-left: 0;
   padding-right: 0;
@@ -664,10 +663,13 @@ header .container {
 }
 
 .navigation {
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  top: 67px;
+  height: calc(100% - 67px);
+  overflow-y: auto;
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
   visibility: hidden;
   z-index: 1;
 }
