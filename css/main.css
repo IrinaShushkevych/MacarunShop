@@ -527,15 +527,15 @@ header .container {
   -webkit-transform: translateX(-83%);
           transform: translateX(-83%);
 }
-.gamburger-menu__checkbox:checked ~ .gamburger-menu__icon {
+.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon {
   -webkit-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
 }
-.gamburger-menu__checkbox:checked ~ .gamburger-menu__icon--top {
+.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon--top {
   -webkit-transform: translate(-50%, 260%) rotate(-45deg);
           transform: translate(-50%, 260%) rotate(-45deg);
 }
-.gamburger-menu__checkbox:checked ~ .gamburger-menu__icon--bottom {
+.gamburger-menu__checkbox:checked ~ .gamburger-menu__button .gamburger-menu__icon--bottom {
   opacity: 0;
 }
 
@@ -659,15 +659,18 @@ header .container {
 }
 
 .navigation {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+  opacity: 0;
   z-index: 1;
 }
 .navigation.is-open {
   display: block;
+}
+.gamburger-menu__checkbox:checked ~ .navigation {
+  opacity: 1;
 }
 @media screen and (min-width: 1200px) {
   .navigation {
@@ -1527,14 +1530,15 @@ header .container {
 body {
   font-family: Montserrat, serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 10px;
   line-height: 1.2;
 }
 
 .section-title {
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 17px;
 }
@@ -1546,6 +1550,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section-title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
     font-size: 30px;
     line-height: 1.23;
     padding-bottom: 50px;

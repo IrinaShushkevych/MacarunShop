@@ -63,13 +63,13 @@
     transform: translateX(-83%);
   }
 
-  .gamburger-menu__checkbox:checked ~ & {
+  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button & {
     transform: translateX(-50%) rotate(45deg);
   }
-  .gamburger-menu__checkbox:checked ~ &--top {
+  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--top {
     transform: translate(-50%, 260%) rotate(-45deg);
   }
-  .gamburger-menu__checkbox:checked ~ &--bottom {
+  .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--bottom {
     opacity: 0;
   }
 }
@@ -194,13 +194,14 @@
 }
 
 .navigation {
-  display: none;
+  // display: none;
   // padding-left: 15px;
   // padding-right: 15px;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+  opacity: 0;
   z-index: 1;
   // background-color: $color-header-bg;
   // padding-left: 19px;
@@ -209,6 +210,10 @@
   // padding-bottom: 12px;
   &.is-open {
     display: block;
+  }
+
+  .gamburger-menu__checkbox:checked ~ & {
+    opacity: 1;
   }
 
   @media screen and (min-width: 1200px) {
