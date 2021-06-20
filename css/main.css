@@ -318,7 +318,7 @@ header .container {
 }
 .hero .container {
   text-align: center;
-  padding: 65px 24px 0 24px;
+  padding: 132px 24px 0 24px;
 }
 .section-menu .container {
   padding-bottom: 19px;
@@ -450,6 +450,19 @@ header .container {
 
 .social-list__icon {
   fill: currentColor;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 320px;
+  overflow-y: auto;
+  height: 100%;
+  z-index: 10;
 }
 
 @media screen and (min-width: 1200px) {
@@ -664,14 +677,17 @@ header .container {
 
 .navigation {
   position: fixed;
-  top: 67px;
-  height: calc(100% - 67px);
+  top: 66px;
+  height: calc(100% - 66px);
   overflow-y: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
   visibility: hidden;
-  z-index: 1;
+  z-index: 10;
 }
 .navigation.is-open {
   display: block;
