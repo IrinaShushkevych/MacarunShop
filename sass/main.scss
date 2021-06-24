@@ -16,6 +16,7 @@
 @import './layouts/section-advantages';
 @import './layouts/footer';
 @import './components/block-navigation';
+@import './layouts/desserts';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
