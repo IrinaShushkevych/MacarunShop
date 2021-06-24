@@ -63,16 +63,12 @@
   @media screen and (min-width: 768px) {
     display: block;
     text-align: center;
-    font-size: 16px;
+    @include fonts($font-accent, 400, 16px, 1.18);
   }
 }
-// .section-menu__link {
-//   margin-left: auto;
-// }
 
 .section-menu__text {
-  font-weight: 600;
-  font-size: 14px;
+  @include fonts($font, 600, 14px, 1.2);
   margin-right: 12px;
 
   @media screen and (min-width: 768px) {

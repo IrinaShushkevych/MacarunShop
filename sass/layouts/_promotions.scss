@@ -116,12 +116,14 @@
 }
 
 .promotions__card-title {
-  font-weight: 600;
-  font-size: 13px;
+  @include fonts($font-accent, 600, 13px, 1.23);
   margin-bottom: 3px;
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 600, 16px, 1.2);
+  }
 }
 
 .promotions__card-text {
-  font-weight: 600;
-  font-size: 18px;
+  @include fonts($font, 600, 18px, 1.22);
 }

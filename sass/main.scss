@@ -18,17 +18,10 @@
 
 body {
   @include fonts($font, 400, 10px, 1.2);
-  // font-family: $font;
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 10px;
-  // line-height: 1.2;
 }
 
 .section-title {
-  @include fonts($fw: 600, $fs: 18px);
-  // font-weight: 600;
-  // font-size: 18px;
+  @include fonts($font, 600, 18px, 1.22);
   text-align: center;
   margin-bottom: 17px;
   .section-celebrated & {
@@ -39,9 +32,18 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    @include fonts($fs: 30px, $fw: 600, $lh: 1.23);
-    // font-size: 30px;
-    // line-height: 1.23;
+    @include fonts($fs: 30px, $lh: 1.23);
     margin-bottom: 50px;
+
+    .section-celebrated & {
+      margin-bottom: 34px;
+    }
+    .section-sets & {
+      margin-bottom: 42px;
+    }
+    .section-instagram &,
+    .section_advantages & {
+      margin-bottom: 40px;
+    }
   }
 }

@@ -304,7 +304,6 @@ summary {
   src: url(../fonts/ProximaNova-Regular.woff) format("woff");
 }
 .container {
-  outline: 1px solid tomato;
   width: 100vw;
   max-width: 480px;
   margin: 0 auto;
@@ -390,6 +389,8 @@ header .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -820,7 +821,8 @@ header .container {
 .navigation__link {
   padding-top: 12px;
   padding-bottom: 11px;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -833,7 +835,6 @@ header .container {
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
-    font-size: 14px;
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -867,7 +868,8 @@ header .container {
 .navigation__link-service {
   padding-top: 7px;
   padding-bottom: 7px;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.79);
@@ -923,10 +925,15 @@ header .container {
   padding-bottom: 11px;
   padding-top: 14px;
   font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.2;
 }
 .navigation__link-contacts--big {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 1.22;
 }
 .navigation__link-contacts img {
   margin-right: 13px;
@@ -964,8 +971,10 @@ header .container {
 }
 
 .hero__title {
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 24px;
+  line-height: 1.2;
   padding-top: 40px;
   padding-bottom: 11px;
 }
@@ -977,12 +986,18 @@ header .container {
 
 .hero__text {
   color: #292929;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
   font-size: 14px;
 }
 .hero__text--uppercase {
-  text-transform: uppercase;
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
 }
 .hero__text--flex {
   display: -webkit-box;
@@ -994,17 +1009,30 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Montserrat, serif;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
   .hero__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 1.22;
   }
   .hero__text--uppercase {
+    font-family: Montserrat, serif;
+    font-weight: 600;
     font-size: 22px;
+    line-height: 1.23;
   }
   .hero__text--flex {
     font-size: 16px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
@@ -1187,13 +1215,18 @@ header .container {
   .section-menu__block-text {
     display: block;
     text-align: center;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 1.18;
   }
 }
 
 .section-menu__text {
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 14px;
+  line-height: 1.2;
   margin-right: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -1300,14 +1333,26 @@ header .container {
 }
 
 .promotions__card-title {
+  font-family: "Proxima Nova", serif;
   font-weight: 600;
   font-size: 13px;
+  line-height: 1.23;
   margin-bottom: 3px;
+}
+@media screen and (min-width: 768px) {
+  .promotions__card-title {
+    font-family: "Proxima Nova", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 .promotions__card-text {
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.22;
 }
 
 @media screen and (min-width: 768px) {
@@ -1506,14 +1551,35 @@ header .container {
 
 .sets__title {
   margin: 0 8px 6px;
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
 }
+@media screen and (min-width: 768px) {
+  .sets__title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 
 .sets__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
   font-size: 10px;
   margin: 0 8px 10px;
+}
+@media screen and (min-width: 768px) {
+  .sets__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 .sets_block-order {
@@ -1598,6 +1664,7 @@ header .container {
 
 .sets-all-button {
   padding: 12px 10px;
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -1611,6 +1678,10 @@ header .container {
 @media screen and (min-width: 768px) {
   .sets-all-button {
     width: 293px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 
@@ -1648,28 +1719,52 @@ header .container {
 
 .section-instagram__nickname {
   padding-bottom: 4px;
-  font: "Proxima Nova", serif;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
+}
+@media screen and (min-width: 768px) {
+  .section-instagram__nickname {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .section-instagram__text {
   padding-bottom: 2px;
-  font: "Proxima Nova", serif;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
 }
 @media screen and (min-width: 768px) {
+  .section-instagram__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
   .section-instagram__text:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .section-instagram__number {
-  font: "Proxima Nova", serif;
+  font-family: "Proxima Nova", serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .section-instagram__number {
+    font-family: "Proxima Nova", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 .section-instagram__galary {
@@ -1766,26 +1861,51 @@ header .container {
 }
 
 .section-advantages__title {
-  margin-bottom: 10px;
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .section-advantages__title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .section-advantages__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   opacity: 0.8;
+}
+@media screen and (min-width: 768px) {
+  .section-advantages__text {
+    font-size: 14px;
+  }
 }
 
 .footer {
   font-family: "Proxima Nova", serif;
 }
 
+.footer-block {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
   .footer-block--right {
     display: block;
     text-align: right;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-block--right {
+    margin-bottom: 0;
   }
 }
 
@@ -1817,7 +1937,9 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .footer-advantages__list:not(:last-child) {
   margin-bottom: 20px;
@@ -1828,7 +1950,11 @@ header .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 0;
+    width: 100px;
   }
   .footer-advantages__list:not(:last-child) {
     margin-bottom: 0px;
@@ -1857,6 +1983,8 @@ header .container {
 }
 
 .footer-advantages__list-text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1;
 }
@@ -1892,6 +2020,7 @@ header .container {
 
 .footer-copyright__phone {
   margin-bottom: 4px;
+  font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -1899,11 +2028,22 @@ header .container {
 }
 
 .footer-copyright__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
   font-size: 10px;
+  line-height: 1.2;
   opacity: 0.7;
 }
 .footer-copyright__text--right {
   text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .footer-copyright__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+  }
 }
 
 .footer-menu {
@@ -1923,7 +2063,6 @@ header .container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    outline: 1px solid yellow;
   }
 }
 
@@ -1942,7 +2081,6 @@ header .container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  outline: 1px solid blue;
 }
 .footer-menu__list:not(:last-child) {
   margin-right: 40px;
@@ -1953,6 +2091,10 @@ header .container {
 }
 
 .footer-menu__title {
+  font-family: "Proxima Nova", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
@@ -1963,6 +2105,12 @@ header .container {
           flex-grow: 1;
 }
 
+.footer-menu__link {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
 .footer-menu__link:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -1973,6 +2121,10 @@ header .container {
 @media screen and (min-width: 768px) {
   .footer-phone {
     display: block;
+    font-family: "Proxima Nova", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 
@@ -1983,6 +2135,10 @@ header .container {
   .footer-text {
     display: block;
     margin-bottom: 70px;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 
@@ -1997,7 +2153,7 @@ body {
   font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.22;
   text-align: center;
   margin-bottom: 17px;
 }
@@ -2010,9 +2166,18 @@ body {
 @media screen and (min-width: 768px) {
   .section-title {
     font-family: Montserrat, serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px;
     line-height: 1.23;
     margin-bottom: 50px;
+  }
+  .section-celebrated .section-title {
+    margin-bottom: 34px;
+  }
+  .section-sets .section-title {
+    margin-bottom: 42px;
+  }
+  .section-instagram .section-title, .section_advantages .section-title {
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

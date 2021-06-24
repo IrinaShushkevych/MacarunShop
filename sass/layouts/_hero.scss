@@ -1,6 +1,5 @@
 .hero__title {
-  font-weight: 600;
-  font-size: 24px;
+  @include fonts($font, 600, 24px, 1.2);
   padding-top: 40px;
   padding-bottom: 11px;
 
@@ -11,26 +10,27 @@
 
 .hero__text {
   color: $color-text-primary;
+  @include fonts($font-accent, 400, 14px, 1.2);
   font-size: 14px;
   &--uppercase {
+    @include fonts($font, 600, 18px, 1.22);
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 18px;
   }
   &--flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    @include fonts($font, 600, 14px, 1.2);
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    @include fonts($font-accent, 400, 18px, 1.22);
     &--uppercase {
-      font-size: 22px;
+      @include fonts($font, 600, 22px, 1.23);
     }
     &--flex {
       font-size: 16px;
+      @include fonts($font, 600, 16px, 1.25);
     }
   }
 }

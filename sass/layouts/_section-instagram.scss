@@ -20,18 +20,19 @@
 
 .section-instagram__nickname {
   padding-bottom: 4px;
-  font: $font-accent;
-  font-size: 18px;
-  line-height: 1.22;
+  @include fonts($font-accent, 400, 18px, 1.22);
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 20px, 1.2);
+  }
 }
 
 .section-instagram__text {
   padding-bottom: 2px;
-  font: $font-accent;
-  font-size: 12px;
-  line-height: 1.25;
+  @include fonts($font-accent, 400, 12px, 1.25);
 
   @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 16px, 1.2);
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -39,10 +40,11 @@
 }
 
 .section-instagram__number {
-  font: $font-accent;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
+  @include fonts($font-accent, 600, 12px, 1.25);
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 600, 16px, 1.2);
+  }
 }
 
 .section-instagram__galary {
