@@ -15,6 +15,7 @@
 @import './layouts/section-instagram';
 @import './layouts/section-advantages';
 @import './layouts/footer';
+@import './components/block-navigation';
 
 body {
   @include fonts($font, 400, 10px, 1.2);

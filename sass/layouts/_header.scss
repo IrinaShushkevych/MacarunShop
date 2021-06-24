@@ -9,6 +9,7 @@ header {
     overflow-y: auto;
     height: 100%;
     z-index: 10;
+    pointer-events: none;
   }
 }
 
@@ -24,6 +25,7 @@ header {
   align-items: center;
   padding-bottom: 4px;
   background-color: $color-header-bg;
+  pointer-events: initial;
 
   @media screen and (min-width: 768px) {
     // display: none;
@@ -44,14 +46,6 @@ header {
     display: none;
   }
 }
-
-// .gamburger-menu__block-icon {
-//   position: relative;
-//   width: 20px;
-//   height: 14px;
-//   margin: 0;
-//   padding: 0;
-// }
 
 .gamburger-menu__icon {
   position: absolute;
@@ -94,58 +88,7 @@ header {
   .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &::after {
     opacity: 0;
   }
-
-  // &--top {
-  //   position: absolute;
-  //   top: 35%;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  // }
-  // &--bottom {
-  //   position: absolute;
-  //   width: 12px;
-  //   top: 67%;
-  //   left: 50%;
-  //   opacity: 1;
-  //   transform: translateX(-83%);
-  // }
-
-  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button & {
-  //   transform: translateX(-50%) rotate(45deg);
-  // }
-  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--top {
-  //   transform: translate(-50%, 260%) rotate(-45deg);
-  // }
-  // .gamburger-menu__checkbox:checked ~ .gamburger-menu__button &--bottom {
-  //   opacity: 0;
-  // }
 }
-// .gamburger-menu__icon {
-//   position: relative;
-//   width: 20px;
-//   border: 1px solid $nav-color;
-//   background-color: $nav-color;
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     top: -6px;
-//     left: -1px;
-//     width: 20px;
-//     border: 1px solid $nav-color;
-//     background-color: $nav-color;
-//   }
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     bottom: -6px;
-//     left: -1px;
-//     width: 12px;
-//     border: 1px solid $nav-color;
-//     background-color: $nav-color;
-//   }
-// }
 
 .gamburger-menu__cart {
   // position: relative;
@@ -241,10 +184,6 @@ header {
 }
 
 .navigation {
-  // display: none;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // position: absolute;
   position: fixed;
   top: 66px;
   height: calc(100% - 66px);
@@ -254,24 +193,18 @@ header {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  // top: 100%;
-  // left: 0;
-  // width: 100%;
-  // opacity: 0;
-  visibility: hidden;
+  display: none;
+  // visibility: hidden;
+  // pointer-events: none;
+  pointer-events: initial;
   z-index: 10;
-  // background-color: $color-header-bg;
-  // padding-left: 19px;
-  // padding-right: 19px;
-  // padding-top: 20px;
-  // padding-bottom: 12px;
   &.is-open {
     display: block;
   }
 
   .gamburger-menu__checkbox:checked ~ & {
-    // opacity: 1;
-    visibility: visible;
+    // visibility: visible;
+    display: block;
   }
 
   @media screen and (min-width: 768px) {
@@ -465,4 +398,66 @@ header {
   color: $color-accent_text;
   background-color: $color-accent;
   border-radius: 50%;
+}
+
+.header-messages {
+  display: none;
+  background-color: $color-header-bg_accent;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  outline: 1px solid red;
+}
+
+.header-messages__item {
+  @include flex-center;
+  padding: 0 60px;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 134px;
+  }
+}
+
+.header-messages__text {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @include fonts($font-accent, 400, 18px, 1.22);
+  text-transform: uppercase;
+  @include flex-center;
+}
+
+.header-messages__block-img {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header-messages__icon {
+  margin-right: 12px;
+
+  &--absolut {
+    position: absolute;
+    width: 45px;
+    height: 17px;
+    bottom: 0;
+    left: 0;
+    transform: translateX(30%);
+    background-image: url(../images/message/message-nuts-number.svg);
+  }
+}
+
+.header-messages__button {
+  @include flex-center;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
 }

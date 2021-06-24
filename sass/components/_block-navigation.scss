@@ -1,0 +1,70 @@
+.block-navigation__path {
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.block-navigation__link {
+  display: inline-block;
+  margin-bottom: 12px;
+  @include fonts($font-accent, 400, 9px, 1.22);
+  color: $block-menu-nav;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--accent {
+    color: $border-button;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 22px;
+    @include fonts($font-accent, 400, 14px, 1.2);
+    &--hidden {
+      display: inline-block;
+    }
+  }
+}
+
+.block-navigation__arrow {
+  &--hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    &--hidden {
+      display: inline-block;
+    }
+  }
+}
+
+.block-navigation__list {
+  @include flex-center;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-bottom: 18px;
+}
+
+.block-navigation__item {
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.block-navigation__button {
+  background-color: $color-button;
+  border-radius: 100px;
+  padding: 7px;
+  border: none;
+  @include fonts($font-accent, 400, 12px, 1.25);
+  color: $button-text;
+
+  &:hover,
+  &:focus {
+    background-color: $color-button-hover;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 14px, 1.2);
+  }
+}

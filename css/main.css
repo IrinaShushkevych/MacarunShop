@@ -341,6 +341,10 @@ header .container {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.section-sets--pages .container {
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
 .section-instagram .container {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -486,6 +490,7 @@ header .container {
     overflow-y: auto;
     height: 100%;
     z-index: 10;
+    pointer-events: none;
   }
 }
 
@@ -507,6 +512,7 @@ header .container {
           align-items: center;
   padding-bottom: 4px;
   background-color: #f7ebe5;
+  pointer-events: initial;
 }
 @media screen and (min-width: 768px) {
   .gamburger-menu {
@@ -710,14 +716,15 @@ header .container {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  visibility: hidden;
+  display: none;
+  pointer-events: initial;
   z-index: 10;
 }
 .navigation.is-open {
   display: block;
 }
 .gamburger-menu__checkbox:checked ~ .navigation {
-  visibility: visible;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .navigation {
@@ -970,6 +977,95 @@ header .container {
   border-radius: 50%;
 }
 
+.header-messages {
+  display: none;
+  background-color: #d4e9f9;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 768px) {
+  .header-messages {
+    display: block;
+  }
+}
+
+.header-messages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 60px;
+}
+.header-messages__item--hidden {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header-messages__item {
+    padding: 0 134px;
+  }
+}
+
+.header-messages__text {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-messages__block-img {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header-messages__icon {
+  margin-right: 12px;
+}
+.header-messages__icon--absolut {
+  position: absolute;
+  width: 45px;
+  height: 17px;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+  background-image: url(../images/message/message-nuts-number.svg);
+}
+
+.header-messages__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+}
+
 .hero__title {
   font-family: Montserrat, serif;
   font-weight: 600;
@@ -1147,20 +1243,24 @@ header .container {
   }
 }
 .section-menu__item {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.16);
+}
+.section-menu__item > a {
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(41, 41, 41, 0.16);
 }
 @media screen and (min-width: 768px) {
   .section-menu__item {
     display: block;
     text-align: center;
     margin-bottom: 25px;
-    padding: 37px 55px 34px;
     width: calc((100% - 30px) / 2);
   }
   .section-menu__item:nth-child(2n-1) {
     margin-right: 30px;
+  }
+  .section-menu__item > a {
+    padding: 37px 55px 34px;
   }
 }
 
@@ -1510,6 +1610,11 @@ header .container {
       flex-wrap: wrap;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .sets {
+    margin-bottom: 35px;
+  }
+}
 
 .sets__item {
   display: -webkit-box;
@@ -1675,6 +1780,9 @@ header .container {
   margin-left: auto;
   margin-right: auto;
 }
+.sets-all-button--hidden {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .sets-all-button {
     width: 293px;
@@ -1682,6 +1790,9 @@ header .container {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
+  }
+  .sets-all-button--hidden {
+    display: block;
   }
 }
 
@@ -2135,6 +2246,93 @@ header .container {
   .footer-text {
     display: block;
     margin-bottom: 70px;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-navigation__path {
+    text-align: center;
+  }
+}
+
+.block-navigation__link {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.22;
+  color: rgba(41, 41, 41, 0.46);
+}
+.block-navigation__link--hidden {
+  display: none;
+}
+.block-navigation__link--accent {
+  color: #4e9dd3;
+}
+@media screen and (min-width: 768px) {
+  .block-navigation__link {
+    margin-bottom: 22px;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .block-navigation__link--hidden {
+    display: inline-block;
+  }
+}
+
+.block-navigation__arrow--hidden {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .block-navigation__arrow--hidden {
+    display: inline-block;
+  }
+}
+
+.block-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -4px;
+  margin-bottom: 18px;
+}
+
+.block-navigation__item {
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.block-navigation__button {
+  background-color: #f7ebe5;
+  border-radius: 100px;
+  padding: 7px;
+  border: none;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(41, 41, 41, 0.83);
+}
+.block-navigation__button:hover, .block-navigation__button:focus {
+  background-color: #ecc7b4;
+}
+@media screen and (min-width: 768px) {
+  .block-navigation__button {
     font-family: "Proxima Nova", serif;
     font-weight: 400;
     font-size: 14px;
