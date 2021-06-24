@@ -10,6 +10,17 @@
   &:nth-child(2n - 1) {
     margin-right: 8px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 4);
+    // margin-bottom: 0;
+    &:nth-child(2n - 1) {
+      margin-right: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .section_advantages__img {

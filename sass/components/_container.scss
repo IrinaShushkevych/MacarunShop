@@ -55,14 +55,26 @@
     background-color: $footer-bg;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     max-width: 1400px;
 
     .hero & {
+      @include flex-center;
       text-align: center;
-      padding: 0 218px 0 0;
-      display: flex;
+      // padding: 0 218px 0 0;
+      padding: 0;
       flex-direction: row-reverse;
+    }
+
+    .section-celebrated & {
+      padding-top: 63px;
+      padding-bottom: 54px;
+    }
+
+    .footer & {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
   }
 }

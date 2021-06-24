@@ -1,18 +1,24 @@
 .section-menu__list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -25px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  @include colorize(
+    $colors-menu-card,
+    '.section-menu__item',
+    '.section-menu__icon-img'
+  );
+}
 .section-menu__item {
-  // display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid $menu-border;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: block;
     text-align: center;
     margin-bottom: 25px;
@@ -21,78 +27,30 @@
     &:nth-child(2n - 1) {
       margin-right: 30px;
     }
-    outline: 1px solid blue;
-
-    &--first {
-      background-color: #ffdbc3;
-      background-image: linear-gradient(
-        to bottom right,
-        rgba(255, 255, 255, 0.3) 50%,
-        #ffdbc3 50%
-      );
-    }
-
-    &--second {
-      background-color: #ffc2cc;
-      background-image: linear-gradient(
-        to bottom left,
-        rgba(255, 255, 255, 0.3) 50%,
-        #ffc2cc 50%
-      );
-    }
-
-    &--third {
-      background-color: #b4eab3;
-      background-image: linear-gradient(
-        to bottom left,
-        #b4eab3 50%,
-        rgba(255, 255, 255, 0.3) 50%
-      );
-    }
-
-    &--fourth {
-      background-color: #fdd5cd;
-      background-image: linear-gradient(
-        to bottom right,
-        #fdd5cd 50%,
-        rgba(255, 255, 255, 0.3) 50%
-      );
-    }
-
-    &--fifth {
-      background-color: #a8dcdf;
-      background-image: linear-gradient(
-        to bottom right,
-        rgba(255, 255, 255, 0.3) 50%,
-        #a8dcdf 50%
-      );
-    }
-
-    &--sixth {
-      background-color: #c4c6ec;
-      background-image: linear-gradient(
-        to bottom left,
-        rgba(255, 255, 255, 0.3) 50%,
-        #c4c6ec 50%
-      );
-    }
   }
 }
 
 .section-menu__block-icon {
   display: none;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $color-accent_text;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    @include flex-center;
+    margin-bottom: 20px;
   }
 }
+
 .section-menu__block-link {
   display: flex;
   justify-content: space-between;
   width: 100%;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
@@ -102,7 +60,7 @@
 .section-menu__block-text {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: block;
     text-align: center;
     font-size: 16px;
@@ -117,7 +75,7 @@
   font-size: 14px;
   margin-right: 12px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
   }
 }
@@ -125,24 +83,9 @@
 .section-menu__icon {
   width: 12px;
   height: 8px;
-
-  @media screen and (min-width: 1200px) {
+  fill: $color-text-primary;
+  @media screen and (min-width: 768px) {
     width: 16px;
     height: 10px;
-  }
-}
-
-.section-menu__block-icon {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: $color-accent_text;
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
   }
 }

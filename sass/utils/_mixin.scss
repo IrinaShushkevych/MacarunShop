@@ -10,3 +10,20 @@
   font-size: $fs;
   line-height: $lh;
 }
+
+@mixin colorize($colors-menu-card, $selector, $selector-icon) {
+  @each $color in $colors-menu-card {
+    $idx: index($colors-menu-card, $color);
+    #{$selector}:nth-child(#{$idx}) {
+      background-color: #{$color};
+      background-image: linear-gradient(
+        to bottom nth($direction-menu-card, $idx),
+        rgba(255, 255, 255, 0.3) 50%,
+        #{$color} 50%
+      );
+    }
+    #{$selector}:nth-child(#{$idx}) #{$selector-icon} {
+      fill: #{$color};
+    }
+  }
+}

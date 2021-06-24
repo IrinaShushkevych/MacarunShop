@@ -1,17 +1,19 @@
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 320px;
-  overflow-y: auto;
-  height: 100%;
-  z-index: 10;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    overflow-y: auto;
+    height: 100%;
+    z-index: 10;
+  }
 }
 
 .logo {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -23,8 +25,9 @@ header {
   padding-bottom: 4px;
   background-color: $color-header-bg;
 
-  @media screen and (min-width: 1200px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    // display: none;
+    background: transparent;
   }
 }
 
@@ -37,7 +40,7 @@ header {
   //   padding: 18px;
   cursor: pointer;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -152,7 +155,7 @@ header {
   // display: block;
   padding: 18px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding: 15px 0;
     &--mobile {
       display: none;
@@ -162,7 +165,7 @@ header {
 
 .gamburger-menu__cart-block {
   position: relative;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-right: 7px;
   }
 }
@@ -188,7 +191,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 124px;
     height: 124px;
     background-color: $logo;
@@ -200,7 +203,7 @@ header {
   position: relative;
   width: 37px;
   height: 37px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 61px;
     height: 61px;
     top: -20px;
@@ -212,7 +215,7 @@ header {
   top: 56px;
   width: 8px;
   height: 5px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 14px;
     height: 8px;
     top: 104px;
@@ -224,7 +227,7 @@ header {
   top: 30px;
   width: 55px;
   height: 26px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 114px;
     height: 55px;
     top: 50px;
@@ -271,10 +274,13 @@ header {
     visibility: visible;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     position: static;
     flex-direction: column-reverse;
+    visibility: visible;
+    max-width: 100%;
+    transform: none;
     &.is-open {
       display: flex;
       position: static;
@@ -286,11 +292,10 @@ header {
 .navigation__block {
   background-color: $color-header-bg;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: transparent;
+  @media screen and (min-width: 768px) {
+    @include flex-center;
+    flex-wrap: wrap;
+    // background: transparent;
     padding: 0 15px;
   }
 }
@@ -305,12 +310,12 @@ header {
   border-bottom: 1px solid $color-menu-border;
   background-color: $color-header-bg;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media screen and (min-width: 768px) {
+    @include flex-center;
+    flex-wrap: wrap;
     border: none;
     padding: 0 15px;
+    background: transparent;
   }
 }
 
@@ -320,10 +325,11 @@ header {
   &--desktop {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    border: none;
     &:not(:last-child) {
       margin-right: 40px;
-      border: none;
+      // border: none;
     }
     &--desktop {
       display: block;
@@ -351,7 +357,7 @@ header {
     text-decoration-color: $color-accent;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     padding-top: 64px;
     padding-bottom: 64px;
@@ -363,16 +369,17 @@ header {
   padding-bottom: 17px;
   border-bottom: 1px solid $color-menu-border;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     border: none;
     padding: 0;
+    margin-right: 10px;
   }
 }
 
 .navigation__item-service {
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 14px;
     }
@@ -395,7 +402,7 @@ header {
 }
 
 .navigation__contacts {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -410,12 +417,12 @@ header {
   &--hidden {
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: block;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 0;
       margin-right: 29px;
@@ -447,9 +454,9 @@ header {
     text-decoration-color: $color-accent;
   }
 
-  @media screen and (min-width: 1200px) {
-    pading-top: 15px;
-    pading-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

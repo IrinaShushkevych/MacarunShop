@@ -10,6 +10,14 @@
   margin-right: 15px;
 }
 
+.section-instagram__information {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    @include flex-center;
+    justify-content: space-between;
+  }
+}
+
 .section-instagram__nickname {
   padding-bottom: 4px;
   font: $font-accent;
@@ -22,6 +30,12 @@
   font: $font-accent;
   font-size: 12px;
   line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .section-instagram__number {
@@ -35,6 +49,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -2px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: -4px;
+  }
 }
 
 .section-instagram__item {
@@ -49,5 +67,30 @@
 
   &:not(:nth-child(3n)) {
     margin-right: 2px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 5 * 4px) / 6);
+    margin-bottom: 4px;
+    &:not(:nth-child(3n)) {
+      margin-right: 0px;
+    }
+    &:not(:nth-child(6n)) {
+      margin-right: 4px;
+    }
+    &--hidden {
+      display: block;
+    }
+  }
+}
+
+.section-instagram__counts {
+  @media screen and (min-width: 768px) {
+    @include flex-center;
+    margin-left: auto;
   }
 }
