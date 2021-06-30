@@ -1,0 +1,59 @@
+.sets-all-button {
+  padding: 12px 10px;
+  @include fonts($font, 600, 12px, 1.25);
+  width: 218px;
+  border: 1px solid $border-button;
+  border-radius: 3px;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--hidden {
+    display: none;
+  }
+
+  .deserts-hero & {
+    width: 155px;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 293px;
+    @include fonts($font, 600, 14px, 1.2);
+    &--hidden {
+      display: block;
+    }
+    .deserts-hero & {
+      width: 230px;
+    }
+  }
+}
+
+.button-order {
+  @include flex-center;
+  background-color: $color-accent;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 22px;
+  color: $color-accent_text;
+  @include fonts($font, 600, 12px, 1.25);
+
+  & img {
+    margin-right: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 15px 38px;
+    @include fonts($font, 600, 12px, 1.25);
+    & img {
+      margin-right: 12px;
+    }
+  }
+}

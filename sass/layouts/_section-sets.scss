@@ -29,7 +29,23 @@
     &:not(:nth-child(3n)) {
       margin-right: 30px;
     }
+
+    .section-sets-desserts & {
+      width: calc((100% - 3 * 30px) / 4);
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(4n)) {
+        margin-right: 30px;
+      }
+    }
   }
+}
+
+.sets__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sets__block-img {
@@ -69,23 +85,36 @@
 .sets__price {
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-direction: column;
   padding-left: 12px;
   @include fonts($font, 600, 14px, 1.22);
   color: $color-accent;
 
+  border-right: 1px solid $border-set;
+
   @media screen and (min-width: 768px) {
     padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     @include fonts($font, 600, 18px, 1.22);
   }
+}
+
+.sets__old-price {
+  display: contents;
+  margin-bottom: 6px;
+  @include fonts($font, 600, 14px, 1.2);
+  color: $strike-text;
+  text-decoration: line-through;
 }
 
 .sets__button-buy {
   width: 45px;
   height: 37px;
   border: none;
-  border-left: 1px solid $border-set;
+  // border-left: 1px solid $border-set;
   background: transparent;
 
   @media screen and (min-width: 768px) {
@@ -101,28 +130,5 @@
     display: inline-block;
     @include fonts($font, 600, 14px, 1.21);
     margin-left: 12px;
-  }
-}
-
-.sets-all-button {
-  padding: 12px 10px;
-  @include fonts($font, 600, 12px, 1.25);
-  width: 218px;
-  border: 1px solid $border-button;
-  border-radius: 3px;
-  background: transparent;
-  margin-left: auto;
-  margin-right: auto;
-
-  &--hidden {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 293px;
-    @include fonts($font, 600, 14px, 1.2);
-    &--hidden {
-      display: block;
-    }
   }
 }

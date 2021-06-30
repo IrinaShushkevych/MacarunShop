@@ -3,7 +3,11 @@
   style="position:absolute;width:0;height:0"
   xmlns="http://www.w3.org/2000/svg"
   overflow="hidden"
-><defs><symbol id="arrow-right" viewBox="0 0 43 32"><path
+><defs><symbol id="arrow-down" viewBox="0 0 51 32"><path
+        d="M51.2 6.054L45.227 0 25.6 19.892 5.973 0 0 6.054 25.6 32 51.2 6.054z"
+      /></symbol><symbol id="arrow-up" viewBox="0 0 51 32"><path
+        d="M51.2 25.946L45.227 32 25.6 12.108 5.973 32 0 25.946 25.6 0l25.6 25.946z"
+      /></symbol><symbol id="arrow-right" viewBox="0 0 43 32"><path
         d="M1.847 14.215h34.514l-8.235-8.384c-.721-.734-.721-1.925 0-2.659s1.891-.734 2.612 0l11.388 11.593a1.905 1.905 0 010 2.659L30.738 29.018a1.826 1.826 0 01-2.612 0 1.905 1.905 0 010-2.659l8.235-8.384H1.847c-1.02 0-1.847-.842-1.847-1.88s.827-1.88 1.847-1.88z"
       /></symbol><symbol id="car-macaroon" viewBox="0 0 46 32"><path
         fill="var(--color1, #4e9dd3)"

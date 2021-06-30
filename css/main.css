@@ -358,6 +358,29 @@ header .container {
   padding-bottom: 53px;
   background-color: #ebedee;
 }
+.deserts-header .container, .card-header .container {
+  padding-top: 80px;
+}
+.deserts-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+  background-color: #feb0e1;
+}
+.deserts-card .container {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.set-card .container {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1400px;
@@ -395,6 +418,92 @@ header .container {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .deserts-header .container, .card-header .container {
+    padding-top: 34px;
+  }
+  .deserts-card .container {
+    margin-top: 35px;
+    margin-bottom: 37px;
+  }
+}
+
+.sets-all-button {
+  padding: 12px 10px;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 218px;
+  border: 1px solid #4e9dd3;
+  border-radius: 3px;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sets-all-button--hidden {
+  display: none;
+}
+.deserts-hero .sets-all-button {
+  width: 155px;
+}
+.deserts-hero .sets-all-button:not(:last-child) {
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .deserts-hero .sets-all-button:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sets-all-button {
+    width: 293px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .sets-all-button--hidden {
+    display: block;
+  }
+  .deserts-hero .sets-all-button {
+    width: 230px;
+  }
+}
+
+.button-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e7426a;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 22px;
+  color: #ffffff;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.button-order img {
+  margin-right: 4px;
+}
+@media screen and (min-width: 768px) {
+  .button-order {
+    padding: 15px 38px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  .button-order img {
+    margin-right: 12px;
   }
 }
 
@@ -476,6 +585,65 @@ header .container {
 
 .social-list__icon {
   fill: currentColor;
+}
+
+.characteristics__block-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 16px 13px 10px;
+  border: 1px solid #ededf0;
+  width: 100%;
+  background: transparent;
+}
+.characteristics__block-name p, .characteristics__block-name svg {
+  pointer-events: none;
+}
+
+.characteristics__title {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.characteristics__icon-path {
+  visibility: hidden;
+}
+.characteristics__icon-path.is-open {
+  visibility: visible;
+}
+
+.characteristics__list {
+  padding: 15px 16px 20px 18px;
+  display: none;
+  border: 1px solid #ededf0;
+  border-top: none;
+}
+.characteristics__list.is-open {
+  display: block;
+}
+
+.characteristics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.characteristics__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.characteristics__text:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1350,6 +1518,19 @@ header .container {
 .promotions__list {
   padding-bottom: 22px;
 }
+.deserts-card .promotions__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .promotions__list {
     display: -webkit-box;
@@ -1365,17 +1546,38 @@ header .container {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  overflow: hidden;
+  text-align: center;
+}
+.deserts-card .promotions__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: calc((100% - 2 * 10px) / 2);
+  min-height: 220px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 .promotions__item--second {
+  background-color: #feb0e1;
+}
+.promotions .promotions__item--second {
   display: none;
 }
-.promotions__item--third {
+.deserts-card .promotions__item--third {
+  background-color: #b3d9f3;
+  height: 100px;
+  min-height: 100px;
+}
+.promotions .promotions__item--third {
   display: none;
 }
 .promotions__item--fourth {
-  display: none;
   padding-top: 10px;
   background-color: #ffb84e;
+}
+.promotions .promotions__item--fourth {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .promotions__item {
@@ -1386,13 +1588,22 @@ header .container {
   .promotions__item:not(:last-child) {
     margin-right: 30px;
   }
-  .promotions__item--second, .promotions__item--third, .promotions__item--fourth {
+  .promotions .promotions__item--second, .promotions .promotions__item--third, .promotions .promotions__item--fourth {
     display: block;
+  }
+  .deserts-card .promotions__item {
+    width: calc((100% - 3 * 10px) / 3);
+    min-height: 340px;
+    margin-right: 10px;
+    margin-bottom: 0;
   }
 }
 
-.promotion__img {
+.promotions .promotion__img {
   width: 100%;
+}
+.deserts-card .promotion__img {
+  max-width: 100%;
 }
 
 .promotions__block-card {
@@ -1412,6 +1623,18 @@ header .container {
   font-family: "Proxima Nova", serif;
   line-height: 1.23;
 }
+.deserts-card .promotions__card {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .promotions__item--first .promotions__card {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5.46%, rgba(82, 179, 81, 0)), color-stop(39.41%, #52b351));
   background-image: linear-gradient(180deg, rgba(82, 179, 81, 0) 5.46%, #52b351 39.41%);
@@ -1424,12 +1647,26 @@ header .container {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5.46%, rgba(126, 161, 204, 0)), color-stop(39.41%, #7ea1cc));
   background-image: linear-gradient(180deg, rgba(126, 161, 204, 0) 5.46%, #7ea1cc 39.41%);
 }
+.deserts-card .promotions__item--third .promotions__card {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(13.11%, rgba(142, 192, 226, 0)), color-stop(71.15%, #8ec0e2));
+  background-image: linear-gradient(90deg, rgba(142, 192, 226, 0) 13.11%, #8ec0e2 71.15%);
+}
 .promotions__item--fourth .promotions__card {
-  background-color: #ffb84e;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5.46%, rgba(242, 155, 53, 0)), color-stop(39.41%, #f29b35));
-  background-image: linear-gradient(180deg, rgba(242, 155, 53, 0) 5.46%, #f29b35 39.41%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5.46%, rgba(253, 224, 191, 0)), color-stop(39.41%, #f29b35));
+  background-image: linear-gradient(180deg, rgba(253, 224, 191, 0) 5.46%, #f29b35 39.41%);
   height: 140px;
+}
+.promotions .promotions__item--fourth .promotions__card {
   padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .deserts-card .promotions__card {
+    height: 160px;
+  }
+  .deserts-card .promotions__item--third .promotions__card {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13.11%, rgba(142, 192, 226, 0)), color-stop(71.15%, #8ec0e2));
+    background-image: linear-gradient(180deg, rgba(142, 192, 226, 0) 13.11%, #8ec0e2 71.15%);
+  }
 }
 
 .promotions__card-title {
@@ -1439,12 +1676,25 @@ header .container {
   line-height: 1.23;
   margin-bottom: 3px;
 }
+.deserts-card .promotions__card-title {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.21;
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .promotions__card-title {
     font-family: "Proxima Nova", serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.2;
+  }
+  .deserts-card .promotions__card-title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.21;
   }
 }
 
@@ -1643,6 +1893,26 @@ header .container {
   .sets__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
+  .section-sets-desserts .sets__item {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+  .section-sets-desserts .sets__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .section-sets-desserts .sets__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+.sets__link {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sets__block-img {
@@ -1708,22 +1978,25 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 12px;
   font-family: Montserrat, serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.22;
   color: #e7426a;
+  border-right: 1px solid #ededf0;
 }
 @media screen and (min-width: 768px) {
   .sets__price {
     padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     font-family: Montserrat, serif;
     font-weight: 600;
     font-size: 18px;
@@ -1731,11 +2004,21 @@ header .container {
   }
 }
 
+.sets__old-price {
+  display: contents;
+  margin-bottom: 6px;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #969696;
+  text-decoration: line-through;
+}
+
 .sets__button-buy {
   width: 45px;
   height: 37px;
   border: none;
-  border-left: 1px solid #ededf0;
   background: transparent;
 }
 @media screen and (min-width: 768px) {
@@ -1764,35 +2047,6 @@ header .container {
     font-size: 14px;
     line-height: 1.21;
     margin-left: 12px;
-  }
-}
-
-.sets-all-button {
-  padding: 12px 10px;
-  font-family: Montserrat, serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  width: 218px;
-  border: 1px solid #4e9dd3;
-  border-radius: 3px;
-  background: transparent;
-  margin-left: auto;
-  margin-right: auto;
-}
-.sets-all-button--hidden {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .sets-all-button {
-    width: 293px;
-    font-family: Montserrat, serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2;
-  }
-  .sets-all-button--hidden {
-    display: block;
   }
 }
 
@@ -2340,6 +2594,142 @@ header .container {
   }
 }
 
+.deserts-hero__content {
+  min-width: 155px;
+  max-width: 355px;
+  margin-left: auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .deserts-hero__content {
+    min-width: 0;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.deserts-hero__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .deserts-hero__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 42px;
+  }
+}
+
+.set-card__title {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .set-card__title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 11px;
+  }
+}
+
+.set-card__text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .set-card__text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 30px;
+  }
+}
+
+.set-card__block-img {
+  margin-bottom: 14px;
+}
+
+.set-card__list-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 11px;
+}
+
+.set-card__item-img {
+  width: 36px;
+}
+.set-card__item-img:not(:last-child) {
+  margin-right: 8px;
+}
+
+.set-card__img {
+  width: 100%;
+}
+
+.set-card__block-order {
+  padding: 12px 10px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #ededf0;
+  border-radius: 5px;
+}
+
+.set-card__price {
+  padding-left: 12px;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #e7426a;
+}
+
 body {
   font-family: Montserrat, serif;
   font-weight: 400;
@@ -2361,6 +2751,12 @@ body {
 .section-sets .section-title {
   margin-bottom: 19px;
 }
+.deserts-header .section-title {
+  margin-bottom: 12px;
+}
+.deserts-hero .section-title {
+  margin-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
   .section-title {
     font-family: Montserrat, serif;
@@ -2378,4 +2774,24 @@ body {
   .section-instagram .section-title, .section_advantages .section-title {
     margin-bottom: 40px;
   }
+  .section-sets-desserts .section-title {
+    margin-bottom: 20px;
+  }
+  .deserts-header .section-title {
+    margin-bottom: 46px;
+  }
+  .deserts-hero .section-title {
+    margin-bottom: 17px;
+  }
+}
+
+.section-text {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+}
+.section-sets-desserts .section-text {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

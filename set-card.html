@@ -193,226 +193,321 @@
       </div>
     </header>
     <main>
-      <section class="deserts-header">
+      <section class="card-header">
         <div class="container">
           <div class="block-navigation">
             <p class="block-navigation__path">
               <a href="./index.html" class="block-navigation__link">Главная</a>
+              <span class="block-navigation__arrow block-navigation__arrow">
+                &gt;
+              </span>
+              <a
+                href="./sets.html"
+                class="block-navigation__link block-navigation__link"
+              >
+                Готовые наборы
+              </a>
               <span class="block-navigation__arrow">&gt;</span>
               <a
                 href="./index.html"
                 class="block-navigation__link block-navigation__link--accent"
               >
-                Готовые наборы
+                Сердце
               </a>
             </p>
           </div>
-          <h1 class="section-title">Каталог десертов</h1>
         </div>
       </section>
-      <section class="deserts-hero">
+      <section class="set-card">
         <div class="container">
-          <div>
+          <h1 class="set-card__title">Сердце</h1>
+          <p class="set-card__text">
+            40 макаронс в круглой коробке с персональной надписью
+          </p>
+          <div class="set-card__block-img">
             <picture>
               <source
                 srcset="
-                  ./images/desserts/dessert-macaroon-desktop.webp    1x,
-                  ./images/desserts/dessert-macaroon-desktop@2x.webp 2x
+                  ./images/set-card/card-desktop.webp    1x,
+                  ./images/set-card/card-desktop@2x.webp 2x
                 "
                 type="image/webp"
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  ./images/desserts/dessert-macaroon-desktop.png    1x,
-                  ./images/desserts/dessert-macaroon-desktop@2x.png 2x
+                  ./images/set-card/card-desktop.jpg    1x,
+                  ./images/set-card/card-desktop@2x.jpg 2x
                 "
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  ./images/desserts/dessert-macaroon-mibile.webp    1x,
-                  ./images/desserts/dessert-macaroon-mibile@2x.webp 2x
+                  ./images/set-card/card-mobile.webp    1x,
+                  ./images/set-card/card-mobile@2x.webp 2x
                 "
                 type="image/webp"
                 media="(max-width: 767px)"
               />
               <source
                 srcset="
-                  ./images/desserts/dessert-macaroon-mibile.png    1x,
-                  ./images/desserts/dessert-macaroon-mibile@2x.png 2x
+                  ./images/set-card/card-mobile.jpg    1x,
+                  ./images/set-card/card-mobile@2x.jpg 2x
                 "
                 media="(max-width: 767px)"
               />
               <img
-                src="./images/desserts/dessert-macaroon-mibile.png"
-                alt="Макарушки"
-                class="deserts-hero"
+                src="./images/set-card/card-mobile.jpg"
+                alt="Фото товара"
+                class="set-card__img"
               />
             </picture>
+            <ul class="set-card__list-img">
+              <li class="set-card__item-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.webp    1x,
+                      ./images/set-card/card-small-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.jpg    1x,
+                      ./images/set-card/card-small-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.webp    1x,
+                      ./images/set-card/card-small-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.jpg    1x,
+                      ./images/set-card/card-small-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/set-card/card-small-mobile.jpg"
+                    alt="фото1"
+                    class="set-card__img--small"
+                  />
+                </picture>
+              </li>
+              <li class="set-card__item-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.webp    1x,
+                      ./images/set-card/card-small-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.jpg    1x,
+                      ./images/set-card/card-small-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.webp    1x,
+                      ./images/set-card/card-small-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.jpg    1x,
+                      ./images/set-card/card-small-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/set-card/card-small-mobile.jpg"
+                    alt="фото2"
+                    class="set-card__img--small"
+                  />
+                </picture>
+              </li>
+              <li class="set-card__item-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.webp    1x,
+                      ./images/set-card/card-small-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-desktop.jpg    1x,
+                      ./images/set-card/card-small-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.webp    1x,
+                      ./images/set-card/card-small-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/set-card/card-small-mobile.jpg    1x,
+                      ./images/set-card/card-small-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/set-card/card-small-mobile.jpg"
+                    alt="фото3"
+                    class="set-card__img--small"
+                  />
+                </picture>
+              </li>
+            </ul>
           </div>
-          <div class="deserts-hero__content">
-            <h2 class="section-title">Пирожные макарон</h2>
-            <p class="deserts-hero__text">
-              Самые классные, самые лучшие, свежие, воздушные, хрустящие
-              макарушки. лучшее, что мы умеем делать.
-            </p>
-            <div class="block-button">
-              <button class="sets-all-button" type="button">
-                Готовые наборы
+          <div class="set-card__block-info">
+            <div class="set-card__block-order">
+              <p class="set-card__price">2800 руб</p>
+              <button type="button" class="button-order">
+                <img src="./images/cart-white.svg" alt="Корзина" />
+                В корзину
               </button>
-              <button class="sets-all-button" type="button">
-                Собрать свой набор
-              </button>
+            </div>
+            <div class="set-card__block-characteristics">
+              <ul>
+                <li>
+                  <button
+                    class="characteristics__block-name"
+                    data-button
+                    data-number="1"
+                  >
+                    <p class="characteristics__title">Вкусы:</p>
+                    <!-- <span class="characteristics__button" type="button"> -->
+                    <svg width="8" height="6">
+                      <use
+                        href="./images/icons.svg#arrow-up"
+                        class="characteristics__icon-path"
+                        data-icon-up1
+                      ></use>
+                      <use
+                        href="./images/icons.svg#arrow-down"
+                        class="characteristics__icon-path is-open"
+                        data-icon-down1
+                      ></use>
+                    </svg>
+                    <!-- </span> -->
+                  </button>
+                  <div
+                    class="characteristics__list is-open"
+                    data-number="1"
+                    data-block1
+                  >
+                    <ul class="characteristics__list-char">
+                      <li class="characteristics__item">
+                        <span class="characteristics__text">Яблоко</span>
+                        <span class="characteristics__text">4 шт.</span>
+                      </li>
+                      <li class="characteristics__item">
+                        <span class="characteristics__text">Вишня</span>
+                        <span class="characteristics__text">12 шт.</span>
+                      </li>
+                      <li class="characteristics__item">
+                        <span class="characteristics__text">Кокос</span>
+                        <span class="characteristics__text">8 шт.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="characteristics__block-name"
+                    type="button"
+                    data-button
+                    data-number="2"
+                  >
+                    <p class="characteristics__title">
+                      Состав и пищевая ценность
+                    </p>
+                    <!-- <span class="characteristics__button"> -->
+                    <svg width="8" height="6">
+                      <use
+                        href="./images/icons.svg#arrow-up"
+                        class="characteristics__icon-path is-open"
+                        data-icon-up2
+                      ></use>
+                      <use
+                        href="./images/icons.svg#arrow-down"
+                        class="characteristics__icon-path"
+                        data-icon-down2
+                      ></use>
+                    </svg>
+                    <!-- </span> -->
+                  </button>
+                  <div class="characteristics__list" data-block2>
+                    <ul class="characteristics__list-char">
+                      <li class="characteristics__item">
+                        <span class="characteristics__text">1</span>
+                        <span class="characteristics__text">1</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="characteristics__block-name"
+                    type="button"
+                    data-button
+                    data-number="3"
+                  >
+                    <p class="characteristics__title">
+                      Условия и срок хранения
+                    </p>
+                    <!-- <span class="characteristics__button"> -->
+                    <svg width="8" height="6">
+                      <use
+                        href="./images/icons.svg#arrow-up"
+                        class="characteristics__icon-path is-open"
+                        data-icon-up3
+                      ></use>
+                      <use
+                        href="./images/icons.svg#arrow-down"
+                        class="characteristics__icon-path"
+                        data-icon-down3
+                      ></use>
+                    </svg>
+                    <!-- </span> -->
+                  </button>
+                  <div class="characteristics__list" data-block3>
+                    <ul class="characteristics__list-char">
+                      <li class="characteristics__item">
+                        <span class="characteristics__text">2</span>
+                        <span class="characteristics__text">2</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="deserts-card">
-        <div class="container">
-          <ul class="promotions__list">
-            <li class="promotions__item promotions__item--fourth">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desserts/cart1-desktop.webp    1x,
-                    ./images/desserts/cart1-desktop@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart1-desktop.jpg    1x,
-                    ./images/desserts/cart1-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart1-mobile.webp    1x,
-                    ./images/desserts/cart1-mobile@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart1-mobile.jpg    1x,
-                    ./images/desserts/cart1-mobile@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  srcset="
-                    ./images/desserts/cart1-mobile.jpg    1x,
-                    ./images/desserts/cart1-mobile@2x.jpg 2x
-                  "
-                  src="./images/desserts/cart1-mobile.png"
-                  alt=""
-                  class="promotion__img"
-                />
-              </picture>
-              <div class="promotions__card">
-                <h3 class="promotions__card-title">Трубочки со сгущенкой</h3>
-              </div>
-            </li>
-            <li class="promotions__item promotions__item--second">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desserts/cart2-desktop.webp    1x,
-                    ./images/desserts/cart2-desktop@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart2-desktop.jpg    1x,
-                    ./images/desserts/cart2-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart2-mobile.webp    1x,
-                    ./images/desserts/cart2-mobile@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart2-mobile.jpg    1x,
-                    ./images/desserts/cart2-mobile@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  srcset="
-                    ./images/desserts/cart2-mobile.jpg    1x,
-                    ./images/desserts/cart2-mobile@2x.jpg 2x
-                  "
-                  src="./images/desserts/cart2-mobile.jpg"
-                  alt=""
-                  class="promotion__img"
-                />
-              </picture>
-              <div class="promotions__card">
-                <h3 class="promotions__card-title">Эклеры</h3>
-              </div>
-            </li>
-            <li class="promotions__item promotions__item--third">
-              <!-- <picture>
-                <source
-                  srcset="
-                    ./images/desserts/cart3-desktop.webp    1x,
-                    ./images/desserts/cart3-desktop@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart3-desktop.png    1x,
-                    ./images/desserts/cart3-desktop@2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart3-mobile.webp    1x,
-                    ./images/desserts/cart3-mobile@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="
-                    ./images/desserts/cart3-mobile.png    1x,
-                    ./images/desserts/cart3-mobile@2x.png 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  srcset="
-                    ./images/desserts/cart3-mobile.png    1x,
-                    ./images/desserts/cart3-mobile@2x.png 2x
-                  "
-                  src="./images/desserts/cart3-mobile.png"
-                  alt=""
-                  class="promotion__img"
-                />
-              </picture> -->
-              <div class="promotions__card">
-                <h3 class="promotions__card-title">Профитроли</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <section class="section-sets section-sets-desserts">
         <div class="container">
           <h2 class="section-title">Хотите попробовать всё сразу?</h2>
@@ -822,5 +917,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/lists.js"></script>
   </body>
 </html>

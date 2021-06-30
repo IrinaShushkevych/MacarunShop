@@ -1,6 +1,11 @@
 .promotions__list {
   padding-bottom: 22px;
 
+  .deserts-card & {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -8,34 +13,47 @@
 
 .promotions__item {
   position: relative;
-  // padding-top: 214px;
   width: 100%;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  // &--first {
-  // height: calc(100% + 100px);
-  // z-index: -1;
-  // background-image: url(../images/promotion1.jpg);
-  // }
-  &--second {
-    display: none;
-    // background-image: url(../images/promotion2.jpg);
+  overflow: hidden;
+  text-align: center;
+
+  .deserts-card & {
+    flex-grow: 1;
+    width: calc((100% - 2 * 10px) / 2);
+    min-height: 220px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
-  &--third {
+  &--second {
+    background-color: #feb0e1;
+  }
+
+  .promotions &--second {
     display: none;
-    // background-image: url(../images/promotion3.jpg);
-    // padding-top: 239px;
+  }
+
+  .deserts-card &--third {
+    background-color: #b3d9f3;
+    height: 100px;
+    min-height: 100px;
+  }
+
+  .promotions &--third {
+    display: none;
   }
 
   &--fourth {
-    display: none;
     padding-top: 10px;
     background-color: #ffb84e;
-    // background-image: url(../images/promotion4.png);
-    // background-position: top center;
+  }
+
+  .promotions &--fourth {
+    display: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -45,20 +63,28 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
-    &--second,
-    &--third,
-    &--fourth {
+    .promotions &--second,
+    .promotions &--third,
+    .promotions &--fourth {
       display: block;
     }
-  }
 
-  // @media screen and (min-width: 1200px) {
-  //   height: 400px;
-  // }
+    .deserts-card & {
+      width: calc((100% - 3 * 10px) / 3);
+      min-height: 340px;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .promotion__img {
-  width: 100%;
+  .promotions & {
+    width: 100%;
+  }
+  .deserts-card & {
+    max-width: 100%;
+  }
 }
 
 .promotions__block-card {
@@ -78,6 +104,12 @@
 
   font-family: $font-accent;
   line-height: 1.23;
+
+  .deserts-card & {
+    height: 90px;
+    @include flex-center;
+  }
+
   .promotions__item--first & {
     background-image: linear-gradient(
       180deg,
@@ -85,6 +117,7 @@
       #52b351 39.41%
     );
   }
+
   .promotions__item--second & {
     background-image: linear-gradient(
       180deg,
@@ -101,17 +134,40 @@
     );
   }
 
+  .deserts-card .promotions__item--third & {
+    background-image: linear-gradient(
+      90deg,
+      rgba(142, 192, 226, 0) 13.11%,
+      #8ec0e2 71.15%
+    );
+  }
+
   .promotions__item--fourth & {
-    background-color: #ffb84e;
+    // background-color: #ffb84e;
     background-image: linear-gradient(
       180deg,
-      rgba(242, 155, 53, 0) 5.46%,
+      rgba(253, 224, 191, 0) 5.46%,
       #f29b35 39.41%
     );
-    // height: 190px;
-    // padding-top: 75px;
     height: 140px;
+    // padding-top: 20px;
+  }
+
+  .promotions .promotions__item--fourth & {
     padding-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .deserts-card & {
+      height: 160px;
+    }
+    .deserts-card .promotions__item--third & {
+      background-image: linear-gradient(
+        180deg,
+        rgba(142, 192, 226, 0) 13.11%,
+        #8ec0e2 71.15%
+      );
+    }
   }
 }
 
@@ -119,8 +175,16 @@
   @include fonts($font-accent, 600, 13px, 1.23);
   margin-bottom: 3px;
 
+  .deserts-card & {
+    @include fonts($font, 600, 16px, 1.21);
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($font-accent, 600, 16px, 1.2);
+    .deserts-card & {
+      @include fonts($font, 600, 18px, 1.21);
+    }
   }
 }
 

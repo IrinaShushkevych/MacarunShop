@@ -59,6 +59,30 @@
     background-color: $footer-bg;
   }
 
+  .deserts-header &,
+  .card-header & {
+    padding-top: 80px;
+  }
+
+  .deserts-hero & {
+    @include flex-center;
+    padding-left: 0;
+    // padding: 24px 13px 28px 120px;
+    background-color: $dessert-hero;
+    // background-image: url(../../images/desserts/dessert-macaroon-mibile.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+  }
+
+  .deserts-card & {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+
+  .set-card & {
+    text-align: center;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 1400px;
 
@@ -80,6 +104,21 @@
       align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    .deserts-header &,
+    .card-header & {
+      padding-top: 34px;
+    }
+
+    // .deserts-hero & {
+    // padding: 95px 99px 94px 0px;
+    // background-image: url(../../images/desserts/dessert-macaroon-desktop.png);
+    // }
+
+    .deserts-card & {
+      margin-top: 35px;
+      margin-bottom: 37px;
     }
   }
 }

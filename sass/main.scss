@@ -6,6 +6,7 @@
 @import './components/buttons';
 @import './components/pages-nav';
 @import './components/social-list';
+@import './components/_characteristics';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/section-menu';
@@ -17,6 +18,7 @@
 @import './layouts/footer';
 @import './components/block-navigation';
 @import './layouts/desserts';
+@import './layouts/section-card';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -33,6 +35,14 @@ body {
     margin-bottom: 19px;
   }
 
+  .deserts-header & {
+    margin-bottom: 12px;
+  }
+
+  .deserts-hero & {
+    margin-bottom: 5px;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($fs: 30px, $lh: 1.23);
     margin-bottom: 50px;
@@ -47,5 +57,26 @@ body {
     .section_advantages & {
       margin-bottom: 40px;
     }
+
+    .section-sets-desserts & {
+      margin-bottom: 20px;
+    }
+
+    .deserts-header & {
+      margin-bottom: 46px;
+    }
+
+    .deserts-hero & {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.section-text {
+  @include fonts($font-accent, 400, 18px, 1.22);
+  text-align: center;
+
+  .section-sets-desserts & {
+    margin-bottom: 40px;
   }
 }
