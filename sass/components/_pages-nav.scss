@@ -2,8 +2,21 @@
   display: flex;
   justify-content: center;
 
+  .section-partners & {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
+
+    .section-order-close &,
+    .section-partners & {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--disabled {
+      display: none;
+    }
   }
 }
 

@@ -19,9 +19,12 @@
 @import './components/block-navigation';
 @import './layouts/desserts';
 @import './layouts/section-card';
+@import './components/modal';
+@import './layouts/corporation-hero';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
+  max-width: 1440px;
 }
 
 .section-title {

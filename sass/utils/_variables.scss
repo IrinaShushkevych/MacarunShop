@@ -9,6 +9,7 @@ $border-set: #ededf0;
 $border-button: #4e9dd3;
 $bg-accent: rgba(78, 157, 211, 0.1);
 $footer-bg: #ebedee;
+$color-backdrop: rgba(0, 0, 0, 0.39);
 
 $color-accent: #e7426a;
 $color-button: #f7ebe5;
@@ -32,3 +33,26 @@ $colors-menu-card: '#ffdbc3', '#ffc2cc', '#b4eab3', '#fdd5cd', '#a8dcdf',
 $direction-menu-card: right, left, left, right, right, left;
 
 $colors-desert-card: #ffb84e, #fab2d6, #7ea1cc;
+
+$promotion-card-bg: url(../images/promotions/promotion1.png),
+  url(../images/promotions/promotion2.png),
+  url(../images/promotions/promotion3.png),
+  url(../images/promotions/promotion4.png);
+
+$promotion-card-bg-2x: url(../images/promotions/promotion1@2x.png),
+  url(../images/promotions/promotion2@2x.png),
+  url(../images/promotions/promotion3@2x.png),
+  url(../images/promotions/promotion4@2x.png);
+
+$desert-card-bg-mobile: url(../images/desserts/cart1-mobile.jpg),
+  url(../images/desserts/cart2-mobile.jpg),
+  url(../images/desserts/cart3-mobile.jpg);
+$desert-card-bg-mobile-2x: url(../images/desserts/cart1-mobile@2x.jpg),
+  url(../images/desserts/cart2-mobile@2x.jpg),
+  url(../images/desserts/cart3-mobile@2x.jpg);
+$desert-card-bg-desktop: url(../images/desserts/cart1-desktop.jpg),
+  url(../images/desserts/cart2-desktop.jpg),
+  url(../images/desserts/cart3-desktop.jpg);
+$desert-card-bg-desktop-2x: url(../images/desserts/cart1-desktop@2x.jpg),
+  url(../images/desserts/cart2-desktop@2x.jpg),
+  url(../images/desserts/cart3-desktop@2x.jpg);

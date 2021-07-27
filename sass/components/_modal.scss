@@ -1,0 +1,100 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-backdrop;
+  visibility: false;
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms linear;
+  &.is-open {
+    visibility: true;
+    opacity: 1;
+    pointer-events: visible;
+  }
+}
+
+.modal-add-basket {
+  position: relative;
+  width: 278px;
+  height: 232px;
+  margin: 0;
+  padding: 20px 16px;
+  padding-bottom: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-accent_text;
+
+  @media screen and (min-width: 768px) {
+    width: 570px;
+    height: 240px;
+    padding: 48px 46px 26px;
+  }
+}
+
+.modal-add-basket__button-close {
+  position: absolute;
+  top: -21px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    right: -30px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.modal-add-basket__icon-close {
+  width: 100%;
+  height: 100%;
+  fill: $color-accent_text;
+
+  //   @media screen and (min-width: 768px) {
+  //     width: 16px;
+  //     height: 16px;
+  //   }
+}
+
+.modal-title {
+  @include fonts($font, 600, 16px, 1.25);
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 600, 30px, 1.23);
+    margin-bottom: 24px;
+  }
+}
+
+.modal-text {
+  @include fonts($font-accent, 400, 14px, 1.2);
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 16px, 1.19);
+    margin-bottom: 38px;
+  }
+}
+
+.modal-block-button {
+  text-align: center;
+  & .sets-all-button:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    & .sets-all-button:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 10px;
+    }
+  }
+}

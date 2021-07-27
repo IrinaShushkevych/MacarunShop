@@ -24,6 +24,25 @@
     }
   }
 
+  .section-sets-card & {
+    display: none;
+  }
+
+  .modal-block-button & {
+    color: $border-button;
+  }
+
+  .corporation-hero & {
+    margin-top: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-accent_text;
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
+
   @media screen and (min-width: 768px) {
     width: 293px;
     @include fonts($font, 600, 14px, 1.2);
@@ -32,6 +51,13 @@
     }
     .deserts-hero & {
       width: 230px;
+    }
+    .section-sets-card & {
+      display: block;
+    }
+
+    .corporation-hero & {
+      margin-top: 32px;
     }
   }
 }

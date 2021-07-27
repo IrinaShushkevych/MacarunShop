@@ -1,0 +1,134 @@
+.corporation-hero {
+  background-image: url(../images/corporation-set/hero-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/corporation-set/hero-bg-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(..//images/corporation-set/hero-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/corporation-set/hero-bg-desktop@2x.png);
+    }
+  }
+}
+
+.order-close {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.order-close__item {
+  width: calc((100% - 24px) / 2);
+  border: 1px solid $border-color;
+  &:nth-child(2n - 1) {
+    margin-right: 24px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 4);
+    &:nth-child(2n - 1) {
+      margin-right: 0;
+    }
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
+    &--hidden {
+      display: block;
+    }
+  }
+}
+
+.order-close__block-img {
+  padding: 8px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px;
+    padding-bottom: 0;
+  }
+}
+
+.order-close__img {
+  width: 100%;
+  height: 92px;
+  background-color: $strike-text;
+
+  @media screen and (min-width: 768px) {
+    height: 192px;
+  }
+}
+
+.order-close__block-text {
+  vertical-align: top;
+  padding: 10px 10px 16px 14px;
+
+  @media screen and (min-width: 768px) {
+    padding: 22px 14px 24px 22px;
+  }
+}
+
+.order-close__title {
+  @include fonts($font, 600, 12px, 1.25);
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 600, 14px, 1.21);
+  }
+}
+
+.psrtners__list {
+  @include flex-center;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-bottom: -8px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: -68px;
+    margin-bottom: 12px;
+  }
+}
+
+.partners__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 68px;
+    margin-bottom: 30px;
+  }
+}
+
+.questions {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
+}
+
+.questions__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-bottom: 30px;
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    vertical-align: top;
+  }
+}

@@ -1,25 +1,87 @@
 .set-card__title {
   @include fonts($font, 600, 18px, 1.22);
   margin-bottom: 5px;
+  display: block;
+  &--desktop {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     @include fonts($font, 600, 30px, 1.23);
     margin-bottom: 11px;
+    display: none;
+    &--desktop {
+      display: block;
+      text-align: left;
+    }
   }
 }
 
 .set-card__text {
   @include fonts($font-accent, 400, 14px, 1.21);
   margin-bottom: 10px;
+  display: block;
+  &--desktop {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     @include fonts($font-accent, 400, 16px, 1.19);
+    margin-bottom: 30px;
+    display: none;
+    &--desktop {
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+.set-card__block-taste {
+  display: none;
+  padding: 26px 28px 24px 26px;
+  border: 1px solid $border-set;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.set-card__title-block {
+  text-align: left;
+  @include fonts($font, 600, 18px, 1.22);
+  margin-bottom: 18px;
+}
+
+.set-card__item-taste {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.set-card__text-taste,
+.set-card__price-taste {
+  @include fonts($font-accent, 400, 16px, 1.37);
+}
+
+.set-card__block {
+  @media screen and (min-width: 768px) {
+    display: flex;
     margin-bottom: 30px;
   }
 }
 
 .set-card__block-img {
   margin-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
 }
 
 .set-card__list-img {
@@ -33,6 +95,14 @@
 
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 72px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
   }
 }
 
@@ -53,4 +123,92 @@
   padding-left: 12px;
   @include fonts($font, 600, 18px, 1.22);
   color: $color-accent;
+}
+
+.set-card__block-characteristics {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.delivery-list {
+  margin-bottom: 32px;
+}
+
+.delivery-list__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 90px;
+  }
+}
+
+.delivery-list__block-icon {
+  @include flex-center;
+  margin-right: 18px;
+}
+
+.delivery-list__icon {
+  width: 46px;
+  height: 46px;
+}
+
+.delivery-list__text {
+  @include fonts($font-accent, 400, 12px, 1.25);
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 14px, 1.21);
+  }
+}
+
+.block-description {
+  padding: 0 24px 56px 24px;
+  border: 1px solid $border-set;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.block-description__tabs {
+  margin-bottom: 40px;
+  border-bottom: 1px solid $border-set;
+}
+
+.block-description__tabs-list {
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.block-description__tabs-button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  @include fonts($font, 600, 14px, 1.2);
+  padding: 15px;
+
+  &--active::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    content: '';
+    background-color: $color-accent;
+  }
+}
+
+.block-description__text {
+  @include fonts($font-accent, 400, 16px, 1.38);
+  text-align: left;
+  &--delimeter {
+    margin-bottom: 30px;
+  }
 }

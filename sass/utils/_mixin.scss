@@ -41,3 +41,42 @@
     }
   }
 }
+
+@mixin card-bg($promotion-card-bg, $selector) {
+  @each $color in $promotion-card-bg {
+    $idx: index($promotion-card-bg, $color);
+    #{$selector}:nth-child(#{$idx}) {
+      background-image: nth($promotion-card-bg, $idx);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@mixin desert-card-bg($dc, $dc2, $dcd, $dcd2, $selector) {
+  @each $color in $dc {
+    $idx: index($dc, $color);
+    #{$selector}:nth-child(#{$idx}) {
+      background-image: nth($dc, $idx);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: nth($dc2, $idx);
+      }
+
+      @media screen and (min-width: 768px) {
+        background-image: nth($dcd, $idx);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: nth($dcd2, $idx);
+        }
+      }
+    }
+  }
+}

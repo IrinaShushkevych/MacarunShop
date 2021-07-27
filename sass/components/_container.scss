@@ -14,7 +14,7 @@
   .hero & {
     // padding-top: 65px;
     text-align: center;
-    padding: 132px 24px 0 24px;
+    padding: 132px 24px 294px 24px;
   }
 
   .section-menu & {
@@ -67,11 +67,7 @@
   .deserts-hero & {
     @include flex-center;
     padding-left: 0;
-    // padding: 24px 13px 28px 120px;
     background-color: $dessert-hero;
-    // background-image: url(../../images/desserts/dessert-macaroon-mibile.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
   }
 
   .deserts-card & {
@@ -83,15 +79,35 @@
     text-align: center;
   }
 
+  .corporation-hero & {
+    padding-top: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-order-close & {
+    padding-bottom: 16px;
+    padding-top: 20px;
+  }
+
+  .section-partners & {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .section-questions & {
+    padding-top: 22px;
+    padding-bottom: 40px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 1400px;
 
     .hero & {
       @include flex-center;
       text-align: center;
-      // padding: 0 218px 0 0;
       padding: 0;
-      flex-direction: row-reverse;
+      padding-right: 76px;
     }
 
     .section-celebrated & {
@@ -111,14 +127,44 @@
       padding-top: 34px;
     }
 
-    // .deserts-hero & {
-    // padding: 95px 99px 94px 0px;
-    // background-image: url(../../images/desserts/dessert-macaroon-desktop.png);
-    // }
-
     .deserts-card & {
       margin-top: 35px;
       margin-bottom: 37px;
     }
+
+    .set-card & {
+      margin-bottom: 30px;
+    }
+
+    .section-sets-card {
+      margin-top: 30px;
+    }
+
+    .corporation-hero & {
+      padding-top: 86px;
+      padding-bottom: 32px;
+    }
+
+    .section-order-close & {
+      padding-bottom: 42px;
+      padding-top: 35px;
+    }
+
+    .section-partners & {
+      padding-top: 42px;
+      padding-bottom: 24px;
+    }
+
+    .section-questions & {
+      padding-top: 24px;
+      padding-bottom: 64px;
+    }
+  }
+}
+
+.section-sets-card .sets-all-button {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
