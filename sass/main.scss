@@ -21,6 +21,7 @@
 @import './layouts/section-card';
 @import './components/modal';
 @import './layouts/corporation-hero';
+@import './layouts/garantee';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -38,7 +39,8 @@ body {
     margin-bottom: 19px;
   }
 
-  .deserts-header & {
+  .deserts-header &,
+  .garantee-header & {
     margin-bottom: 12px;
   }
 
@@ -57,7 +59,8 @@ body {
       margin-bottom: 42px;
     }
     .section-instagram &,
-    .section_advantages & {
+    .section_advantages &,
+    .garantee-header & {
       margin-bottom: 40px;
     }
 

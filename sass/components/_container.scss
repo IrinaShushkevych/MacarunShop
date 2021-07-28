@@ -60,7 +60,8 @@
   }
 
   .deserts-header &,
-  .card-header & {
+  .card-header &,
+  .garantee-header & {
     padding-top: 80px;
   }
 
@@ -100,6 +101,10 @@
     padding-bottom: 40px;
   }
 
+  .section-card-garantee & {
+    padding-bottom: 36px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 1400px;
 
@@ -123,7 +128,8 @@
     }
 
     .deserts-header &,
-    .card-header & {
+    .card-header &,
+    .garantee-header & {
       padding-top: 34px;
     }
 
@@ -158,6 +164,10 @@
     .section-questions & {
       padding-top: 24px;
       padding-bottom: 64px;
+    }
+
+    .section-card-garantee & {
+      padding-bottom: 244px;
     }
   }
 }
