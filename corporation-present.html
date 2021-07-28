@@ -300,8 +300,12 @@
               индивидуальный дизайн и нанесём ваши лого. Обычно готовим за 2-3
               дня.
             </p>
-            <button class="sets-all-button" type="button">
-              Все праздничные наборы
+            <button
+              class="sets-all-button"
+              type="button"
+              data-modal-button-catalog-all
+            >
+              Скачать весь каталог подарков
             </button>
           </div>
           <!-- <div class="block-img"></div> -->
@@ -536,7 +540,11 @@
               </div>
             </li>
           </ul>
-          <button class="sets-all-button" type="button">
+          <button
+            class="sets-all-button"
+            type="button"
+            data-modal-button-catalog
+          >
             Получить КП
           </button>
         </div>
@@ -1182,6 +1190,128 @@
             Продолжить покупки
           </button>
         </div>
+      </div>
+      <div class="modal-catalog" data-modal-catalog>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-catalog
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          Заказать расчёт или отправить запрос на сотрудничество
+        </h2>
+        <form class="form-catalog" method="POST">
+          <div class="form-catalog__block-input">
+            <label class="form-catalog__label">
+              Ваше имя*
+              <input
+                type="text"
+                class="form-catalog__input"
+                placeholder="Укажите имя"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+                title="Ivan / Иван / Іван"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Ваш телефон*
+              <input
+                type="tel"
+                class="form-catalog__input"
+                placeholder="+38(___)___-__-__"
+                pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                title="+38(099)123-45-67 / +380991234567"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Название компании
+              <input type="text" class="form-catalog__input" />
+            </label>
+            <label class="form-catalog__label">
+              E-mail
+              <input type="email" class="form-catalog__input" />
+            </label>
+          </div>
+          <label class="form-catalog__label form-catalog__label--long">
+            Добавить комментарий
+            <textarea class="form-catalog__textarea"></textarea>
+          </label>
+          <button class="sets-all-button form-catalog__button" type="submit">
+            Заказать расчёт
+          </button>
+          <p class="form-catalog__info">
+            Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+            <a href="#" class="form-catalog__link">Договором оферты</a>
+            и разрешаю обработку моих персональных данных в соответствии с
+            <a href="#" class="form-catalog__link">
+              Политикой конфиденциальности
+            </a>
+          </p>
+        </form>
+      </div>
+      <div class="modal-catalog-all" data-modal-catalog-all>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-catalog-all
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          Скачать весь каталог подарков
+        </h2>
+        <form class="form-catalog" method="POST">
+          <div class="form-catalog__block-input">
+            <label class="form-catalog__label">
+              Ваше имя*
+              <input
+                type="text"
+                class="form-catalog__input"
+                placeholder="Укажите имя"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+                title="Ivan / Иван / Іван"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Ваш телефон*
+              <input
+                type="tel"
+                class="form-catalog__input"
+                placeholder="+38(___)___-__-__"
+                pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                title="+38(099)123-45-67 / +380991234567"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Название компании
+              <input type="text" class="form-catalog__input" />
+            </label>
+            <label class="form-catalog__label">
+              E-mail
+              <input type="email" class="form-catalog__input" />
+            </label>
+          </div>
+          <button class="sets-all-button form-catalog__button" type="submit">
+            Заказать расчёт
+          </button>
+          <p class="form-catalog__info">
+            Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+            <a href="#" class="form-catalog__link">Договором оферты</a>
+            и разрешаю обработку моих персональных данных в соответствии с
+            <a href="#" class="form-catalog__link">
+              Политикой конфиденциальности
+            </a>
+          </p>
+        </form>
       </div>
     </div>
 

@@ -3187,6 +3187,14 @@ header .container {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-add-basket.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
 }
 @media screen and (min-width: 768px) {
   .modal-add-basket {
@@ -3205,6 +3213,10 @@ header .container {
   border: none;
   background-color: transparent;
 }
+.modal-catalog .modal-add-basket__button-close, .modal-catalog-all .modal-add-basket__button-close {
+  top: 16px;
+  right: 16px;
+}
 @media screen and (min-width: 768px) {
   .modal-add-basket__button-close {
     top: 0;
@@ -3212,12 +3224,26 @@ header .container {
     width: 16px;
     height: 16px;
   }
+  .modal-catalog .modal-add-basket__button-close, .modal-catalog-all .modal-add-basket__button-close {
+    top: 0;
+    right: -30px;
+  }
 }
 
 .modal-add-basket__icon-close {
   width: 100%;
   height: 100%;
   fill: #ffffff;
+}
+.modal-catalog .modal-add-basket__icon-close {
+  fill: #292929;
+  opacity: 0.2;
+}
+@media screen and (min-width: 768px) {
+  .modal-catalog .modal-add-basket__icon-close {
+    fill: #ffffff;
+    opacity: 1;
+  }
 }
 
 .modal-title {
@@ -3274,6 +3300,135 @@ header .container {
   }
 }
 
+.modal-catalog,
+.modal-catalog-all {
+  background-color: #f7ebe5;
+  width: 320px;
+  height: 673px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 44px 16px 20px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-catalog.is-open,
+.modal-catalog-all.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+@media screen and (min-width: 768px) {
+  .modal-catalog,
+.modal-catalog-all {
+    width: 830px;
+    height: 566px;
+    padding: 40px 30px 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.modal-catalog-all {
+  height: 553px;
+}
+@media screen and (min-width: 768px) {
+  .modal-catalog-all {
+    height: 406px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-catalog__block-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.form-catalog__label {
+  display: block;
+  margin-bottom: 14px;
+  width: 100%;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .form-catalog__label {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 16px;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .form-catalog__label--long {
+    width: 100%;
+  }
+  .form-catalog__label:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+}
+
+.form-catalog__input,
+.form-catalog__textarea {
+  display: block;
+  width: 100%;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.form-catalog__textarea {
+  height: 76px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .form-catalog__textarea {
+    height: 88px;
+  }
+}
+
+.form-catalog__button {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.form-catalog__info {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .form-catalog__info {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.18;
+  }
+}
+
+.form-catalog__link {
+  display: inline;
+  color: #4e9dd3;
+}
+
 .corporation-hero {
   background-image: url(../images/corporation-set/hero-bg-mobile.png);
   background-repeat: no-repeat;
@@ -3288,7 +3443,6 @@ header .container {
   .corporation-hero {
     background-image: url(..//images/corporation-set/hero-bg-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
   }
 }
