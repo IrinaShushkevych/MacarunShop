@@ -22,6 +22,8 @@
 @import './components/modal';
 @import './layouts/corporation-hero';
 @import './layouts/garantee';
+@import './layouts/delivery';
+@import './layouts/contacts';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -48,6 +50,10 @@ body {
     margin-bottom: 5px;
   }
 
+  .delivery-header & {
+    margin-bottom: 16px;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($fs: 30px, $lh: 1.23);
     margin-bottom: 50px;
@@ -72,8 +78,19 @@ body {
       margin-bottom: 46px;
     }
 
-    .deserts-hero & {
+    .deserts-hero &,
+    .delivery-header & {
       margin-bottom: 17px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .section-delivery & {
+        padding-left: 734px;
+        padding-right: 230px;
+        text-align: left;
+        margin-bottom: 17px;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -82,7 +99,19 @@ body {
   @include fonts($font-accent, 400, 18px, 1.22);
   text-align: center;
 
+  &--bold {
+    font-weight: 600;
+  }
   .section-sets-desserts & {
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-delivery & {
+      padding-left: 734px;
+      padding-right: 230px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
   }
 }

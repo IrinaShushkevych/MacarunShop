@@ -1,0 +1,59 @@
+.section-contact .container {
+  padding-bottom: 284px;
+
+  background-image: url(../images/delivery/contact-mobile.png);
+  background-repeat: no-repeat;
+
+  background-position: 50% 84%;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/delivery/contact-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60%;
+    padding-right: 130px;
+    padding-bottom: 82px;
+    background-image: url(../images/delivery/contact-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 20% 0;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/delivery/contact-desktop@2x.png);
+    }
+  }
+}
+
+.section-contact .section-title {
+  @include fonts($font, 600, 24px, 1.2);
+}
+
+.section-contact .section-title {
+  @include fonts($font, 600, 24px, 1.2);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 600, 42px, 1.21);
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.section-contact .section-text {
+  text-align: left;
+  margin-bottom: 22px;
+  &--bold {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    &--bold {
+      margin-bottom: 22px;
+    }
+  }
+}
