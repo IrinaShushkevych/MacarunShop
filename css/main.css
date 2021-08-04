@@ -358,7 +358,7 @@ header .container {
   padding-bottom: 53px;
   background-color: #ebedee;
 }
-.deserts-header .container, .card-header .container, .garantee-header .container, .delivery-header .container, .opt-header .container, .wedding-header .container {
+.deserts-header .container, .card-header .container, .garantee-header .container, .delivery-header .container, .opt-header .container, .wedding-header .container, .assemble-set-header .container {
   padding-top: 80px;
 }
 .deserts-hero .container {
@@ -452,7 +452,7 @@ header .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .deserts-header .container, .card-header .container, .garantee-header .container, .delivery-header .container, .opt-header .container, .wedding-header .container {
+  .deserts-header .container, .card-header .container, .garantee-header .container, .delivery-header .container, .opt-header .container, .wedding-header .container, .assemble-set-header .container {
     padding-top: 34px;
   }
   .deserts-card .container {
@@ -2039,6 +2039,11 @@ header .container {
   .sets {
     margin-bottom: 35px;
   }
+  .section-count .sets {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .sets__item {
@@ -2084,6 +2089,9 @@ header .container {
   }
   .section-sets-desserts .sets__item:not(:nth-child(4n)), .section-sets-corporation .sets__item:not(:nth-child(4n)) {
     margin-right: 30px;
+  }
+  .section-count .sets__item {
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 
