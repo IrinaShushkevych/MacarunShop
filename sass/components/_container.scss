@@ -62,7 +62,8 @@
   .deserts-header &,
   .card-header &,
   .garantee-header &,
-  .delivery-header & {
+  .delivery-header &,
+  .opt-header & {
     padding-top: 80px;
   }
 
@@ -106,6 +107,26 @@
     padding-bottom: 36px;
   }
 
+  .opt-hero & {
+    padding-bottom: 22px;
+  }
+
+  .section-offer & {
+    padding-top: 22px;
+    padding-bottom: 44px;
+  }
+
+  .section-form & {
+    background-color: $color-header-bg;
+    padding: 38px 16px 14px;
+    text-align: center;
+  }
+
+  .section-recomendation & {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 1400px;
 
@@ -131,7 +152,8 @@
     .deserts-header &,
     .card-header &,
     .garantee-header &,
-    .delivery-header & {
+    .delivery-header &,
+    .opt-header & {
       padding-top: 34px;
     }
 
@@ -170,6 +192,25 @@
 
     .section-card-garantee & {
       padding-bottom: 244px;
+    }
+
+    .opt-hero & {
+      padding-bottom: 42px;
+    }
+
+    .section-offer & {
+      padding-top: 42px;
+      padding-bottom: 113px;
+    }
+
+    .section-form & {
+      padding-top: 76px;
+      padding-bottom: 76px;
+    }
+
+    .section-recomendation & {
+      padding-top: 67px;
+      padding-bottom: 24px;
     }
   }
 }

@@ -24,6 +24,7 @@
 @import './layouts/garantee';
 @import './layouts/delivery';
 @import './layouts/contacts';
+@import './layouts/opt';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -54,6 +55,10 @@ body {
     margin-bottom: 16px;
   }
 
+  .section-recomendation & {
+    margin-bottom: 48px;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($fs: 30px, $lh: 1.23);
     margin-bottom: 50px;
@@ -81,6 +86,10 @@ body {
     .deserts-hero &,
     .delivery-header & {
       margin-bottom: 17px;
+    }
+
+    .section-recomendation {
+      margin-bottom: 56px;
     }
 
     @media screen and (min-width: 768px) {

@@ -36,6 +36,13 @@
     margin-top: 30px;
   }
 
+  .opt-hero & {
+    width: 190px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
   &:hover,
   &:focus {
     color: $color-accent_text;
@@ -58,6 +65,14 @@
 
     .corporation-hero & {
       margin-top: 32px;
+    }
+
+    .opt-hero & {
+      width: 230px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 24px;
+      }
     }
   }
 }

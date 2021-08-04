@@ -168,10 +168,22 @@
   }
 }
 
+.form-catalog__block-form {
+  @media screen and (min-width: 768px) {
+    .section-form & {
+      display: flex;
+    }
+  }
+}
+
 .form-catalog__block-input {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    .section-form & {
+      margin-right: 30px;
+      width: calc((100% - 30px) / 3 * 2);
+    }
   }
 }
 
@@ -189,6 +201,9 @@
 
     &--long {
       width: 100%;
+      .section-form & {
+        width: calc((100% - 30px) / 3);
+      }
     }
 
     &:nth-child(2n - 1) {

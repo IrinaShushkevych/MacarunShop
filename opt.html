@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakaronShop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-messages">
+          <ul class="header-messages__list">
+            <li class="header-messages__item">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <span class="header-messages__block-img">
+                  <img
+                    src="./images/message/message-nuts.svg"
+                    alt="Миндальные орехи"
+                    class="header-messages__icon"
+                    width="32"
+                    height="31"
+                  />
+                  <img
+                    src="./images/message/message-nuts-number.svg"
+                    alt="100%"
+                    class="header-messages__icon header-messages__icon--absolut"
+                    width="32"
+                    height="31"
+                  />
+                </span>
+                МИНДАЛЬНАЯ МУКА И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-macaroon.svg"
+                  alt="Макарун"
+                  class="header-messages__icon"
+                  width="42"
+                  height="40"
+                />
+                ВСЕГДА СВЕЖЕЕ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-box.svg"
+                  alt="Коробка с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="35"
+                />
+                ОПТОВЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-car.svg"
+                  alt="Машина с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="31"
+                />
+                ДОСТАВКА В ДЕНЬ ЗАКАЗА
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gamburger-menu">
+          <input
+            type="checkbox"
+            id="gamburger-menu-input"
+            class="gamburger-menu__checkbox"
+          />
+          <label class="gamburger-menu__button" for="gamburger-menu-input">
+            <!-- <span class="gamburger-menu__icon"></span> -->
+            <span class="gamburger-menu__icon gamburger-menu__icon--top"></span>
+            <span class="gamburger-menu__icon"></span>
+            <span
+              class="gamburger-menu__icon gamburger-menu__icon--bottom"
+            ></span>
+          </label>
+          <div class="logo">
+            <a class="gamburger-menu__logo" href="">
+              <img
+                class="gamburger-menu__logo-head"
+                src="./images/logo-head.svg"
+                alt="логотип"
+                width="37"
+                height="37"
+              />
+              <img
+                class="gamburger-menu__logo-text"
+                src="./images/logo-text.svg"
+                alt="логотип"
+                width="55"
+                height="26"
+              />
+              <img
+                class="gamburger-menu__logo-batterfly"
+                src="./images/logo-batterfly.svg"
+                alt="логотип"
+                width="8"
+                height="5"
+              />
+            </a>
+          </div>
+          <a class="gamburger-menu__cart gamburger-menu__cart--mobile" href="">
+            <div class="gamburger-menu__cart-block">
+              <img src="./images/cart.svg" alt="Корзина" />
+              <span class="gamburger-menu__order">0</span>
+            </div>
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="./sets.html" class="navigation__link">
+                  Готовые наборы
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Собрать свой набор</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  Акции
+                  <span class="round-block">%</span>
+                </a>
+              </li>
+
+              <li class="navigation__item navigation__item--desktop">
+                <div class="navigation__logo">
+                  <a class="gamburger-menu__logo" href="">
+                    <img
+                      class="gamburger-menu__logo-head"
+                      src="./images/logo-head.svg"
+                      alt="логотип"
+                    />
+                    <img
+                      class="gamburger-menu__logo-text"
+                      src="./images/logo-text.svg"
+                      alt="логотип"
+                    />
+                    <img
+                      class="gamburger-menu__logo-batterfly"
+                      src="./images/logo-batterfly.svg"
+                      alt="логотип"
+                    />
+                  </a>
+                </div>
+              </li>
+
+              <li class="navigation__item">
+                <a href="./desserts.html" class="navigation__link">
+                  Каталог десертов
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Корпоративные подарки</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Оптовикам</a>
+              </li>
+            </ul>
+            <div class="navigation__block">
+              <ul class="navigation__services">
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">
+                    Свадебные предложения
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">
+                    Наборы с печатью
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">
+                    Гарантии вкуса и свежести
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">Контакты</a>
+                </li>
+              </ul>
+              <ul class="navigation__contacts">
+                <li class="navigation__item-contacts">
+                  <a
+                    href="tel:88123098288"
+                    class="navigation__link-contacts navigation__link-contacts--big"
+                  >
+                    <img
+                      src="./images/phone.svg"
+                      alt="телефон"
+                      width="11"
+                      height="18"
+                    />
+                    8 812 309-82-88
+                  </a>
+                </li>
+                <li
+                  class="navigation__item-contacts navigation__item-contacts--hidden"
+                >
+                  <a class="gamburger-menu__cart" href="">
+                    <div class="gamburger-menu__cart-block">
+                      <img src="./images/cart.svg" alt="Корзина" />
+                      <span class="gamburger-menu__order">0</span>
+                    </div>
+                    <span>В корзине (0 товаров)</span>
+                  </a>
+                </li>
+                <li class="navigation__item-contacts">
+                  <ul class="social-list">
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="15" height="15">
+                          <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="18" height="32">
+                          <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="25" height="20">
+                          <use href="./images/icons.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="header-bottom"></div>
+      </div>
+    </header>
+    <main>
+      <section class="opt-header">
+        <div class="container">
+          <div class="block-navigation">
+            <p class="block-navigation__path">
+              <a href="./index.html" class="block-navigation__link">Главная</a>
+              <span class="block-navigation__arrow">&gt;</span>
+              <a
+                href="./index.html"
+                class="block-navigation__link block-navigation__link--accent"
+              >
+                Предложения для юридических лиц
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="opt-hero">
+        <div class="container">
+          <!-- <div class="block block--mobile"> -->
+          <div class="block-img block-img--desktop">
+            <picture>
+              <source
+                srcset="
+                  ./images/opt/hero-desktop.webp    1x,
+                  ./images/opt/hero-desktop@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/opt/hero-desktop.jpg    1x,
+                  ./images/opt/hero-desktop@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/opt/hero-mobile.webp    1x,
+                  ./images/opt/hero-mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  ./images/opt/hero-mobile.jpg    1x,
+                  ./images/opt/hero-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/opt/hero-mobile.jpg" alt="витрина магазина" />
+            </picture>
+          </div>
+          <div class="block-text">
+            <h2 class="hero__title">Поставки пирожных оптом</h2>
+            <h3 class="hero__title hero__title--second block-mobile">
+              Мы готовы к сотрудничеству с юридическими лицами, кафе,
+              ресторанами, отелями и т.д.
+            </h3>
+            <h3 class="hero__title hero__title--second block-desktop">
+              Наши макаронсы и трубочки продаются в крупнейших
+              <br />
+              кондитерских и кофейных сетях Санкт-Петербурга.
+              <br />
+              Присоединяйтесь!
+            </h3>
+            <div class="block-img block-img--mobile">
+              <picture>
+                <source
+                  srcset="
+                    ./images/opt/hero-desktop.webp    1x,
+                    ./images/opt/hero-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/opt/hero-desktop.jpg    1x,
+                    ./images/opt/hero-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/opt/hero-mobile.webp    1x,
+                    ./images/opt/hero-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/opt/hero-mobile.jpg    1x,
+                    ./images/opt/hero-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/opt/hero-mobile.jpg"
+                  alt="витрина магазина"
+                />
+              </picture>
+            </div>
+            <div class="block-button">
+              <button
+                class="sets-all-button"
+                type="button"
+                data-modal-button-catalog-all
+              >
+                Презентация
+              </button>
+              <button
+                class="sets-all-button"
+                type="button"
+                data-modal-button-catalog-all
+              >
+                Прайс-лист
+              </button>
+            </div>
+            <p class="hero__text block-mobile">
+              Рыба-текст предложения
+            </p>
+            <p class="hero__text block-mobile">
+              Приятно, граждане, наблюдать, как действия представителей
+              оппозиции, превозмогая сложившуюся непростую экономическую
+              ситуацию, смешаны с не уникальными данными до степени совершенной
+              неузнаваемости, из-за чего возрастает их статус бесполезности.
+            </p>
+            <p class="hero__text hero__text--flex block-desktop">
+              Мы предлагаем:
+            </p>
+            <ul class="hero-list block-desktop">
+              <li class="hero-list__item">
+                прямые поставки от производителя, всегда свежая продукция;
+              </li>
+              <li class="hero-list__item">
+                ассортимент с высоким средним чеком и маржой;
+              </li>
+              <li class="hero-list__item">
+                бесплатные акриловые шоубоксы для витрины;
+              </li>
+              <li class="hero-list__item">
+                продукцию для дегустации или снижение цены для проведения
+                промо-акций;
+              </li>
+              <li class="hero-list__item">
+                гибкие условия сотрудничества и поставок.
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section class="section-offer">
+        <div class="container">
+          <h2 class="section-title">Что мы можем вам предложить:</h2>
+          <ul class="offer-list">
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon" width="" height="">
+                  <use href="./images/icons.svg#present-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">Корпоративные подарки</h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#cart-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">
+                Сотрудничество с интернет магазинами
+              </h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#tea-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">
+                Сотрудничество с кафе и ресторанами
+              </h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#cofee-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">Сотрудничество с кофейнями</h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#building-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">Сотрудничество с отелями</h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#house-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">Для Retail</h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#cake-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">Кенди бары для мероприятий</h3>
+            </li>
+            <li class="offer-list__item">
+              <div class="offer-list__block-icon">
+                <svg class="offer-list__icon">
+                  <use href="./images/icons.svg#piramid-opt"></use>
+                </svg>
+              </div>
+              <h3 class="offer-list__title">И для других сфер бизнеса</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-form">
+        <div class="container">
+          <h2 class="modal-title">
+            Заказать расчёт или отправить запрос на сотрудничество
+          </h2>
+          <form class="form-catalog" method="POST">
+            <div class="form-catalog__block-form">
+              <div class="form-catalog__block-input">
+                <label class="form-catalog__label">
+                  Ваше имя*
+                  <input
+                    type="text"
+                    class="form-catalog__input"
+                    placeholder="Укажите имя"
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+                    title="Ivan / Иван / Іван"
+                    required
+                  />
+                </label>
+                <label class="form-catalog__label">
+                  Ваш телефон*
+                  <input
+                    type="tel"
+                    class="form-catalog__input"
+                    placeholder="+38(___)___-__-__"
+                    pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                    title="+38(099)123-45-67 / +380991234567"
+                    required
+                  />
+                </label>
+                <label class="form-catalog__label">
+                  Название компании
+                  <input type="text" class="form-catalog__input" />
+                </label>
+                <label class="form-catalog__label">
+                  E-mail
+                  <input type="email" class="form-catalog__input" />
+                </label>
+              </div>
+              <label class="form-catalog__label form-catalog__label--long">
+                Добавить комментарий
+                <textarea class="form-catalog__textarea"></textarea>
+              </label>
+            </div>
+
+            <button class="sets-all-button form-catalog__button" type="submit">
+              Заказать расчёт
+            </button>
+            <p class="form-catalog__info">
+              Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+              <a href="#" class="form-catalog__link">Договором оферты</a>
+              и разрешаю обработку моих персональных данных в соответствии с
+              <a href="#" class="form-catalog__link">
+                Политикой конфиденциальности
+              </a>
+            </p>
+          </form>
+        </div>
+      </section>
+      <section class="section-recomendation">
+        <div class="container">
+          <h2 class="section-title">Нас рекомендуют:</h2>
+          <ul class="recomendation">
+            <li class="recomendation__item recomendation__item--hidden">
+              <div class="recomendation__block-item">
+                <div class="recomendation__block">
+                  <p class="recomendation__title">
+                    Очень хорошие пироженки и трубочки, рекомендую
+                  </p>
+                  <p class="recomendation__text">Отзыв блаблаблаа</p>
+                </div>
+
+                <div class="recomendation__author">
+                  <p class="recomendation__text recomendation__text--right">
+                    Иванов Иван
+                    <br />
+                    Генеральный директор ООО “ААА”
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.webp    1x,
+                        ./images/opt/recomend-icon-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.png    1x,
+                        ./images/opt/recomend-icon-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.webp    1x,
+                        ./images/opt/recomend-icon-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.png    1x,
+                        ./images/opt/recomend-icon-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/opt/recomend-icon-mobile.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="recomendation__item">
+              <div class="recomendation__block-item">
+                <div class="recomendation__block">
+                  <p class="recomendation__title">
+                    Очень хорошие пироженки и трубочки, рекомендую
+                  </p>
+                  <p class="recomendation__text">
+                    Банальные, но неопровержимые выводы, а также представители
+                    современных социальных резервов ассоциативно распределены по
+                    отраслям. Противоположная точка зрения подразумевает, что
+                    многие известные личности могут быть обнародованы.
+                  </p>
+                </div>
+                <div class="recomendation__author">
+                  <p class="recomendation__text recomendation__text--right">
+                    Иванов Иван
+                    <br />
+                    Генеральный директор ООО “ААА”
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.webp    1x,
+                        ./images/opt/recomend-icon-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.png    1x,
+                        ./images/opt/recomend-icon-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.webp    1x,
+                        ./images/opt/recomend-icon-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.png    1x,
+                        ./images/opt/recomend-icon-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/opt/recomend-icon-mobile.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="recomendation__item recomendation__item--hidden">
+              <div class="recomendation__block-item">
+                <div class="recomendation__block">
+                  <p class="recomendation__title">
+                    Заголовок отзыва
+                  </p>
+                  <p class="recomendation__text">
+                    Ключевые особенности структуры проекта неоднозначны и будут
+                    указаны как претенденты на роль ключевых факторов. А также
+                    явные признаки победы институционализации будут
+                    заблокированы в рамках своих собственных рациональных
+                    ограничений. Элементы политического процесса функционально
+                    разнесены на независимые элементы. В своём стремлении
+                    улучшить пользовательский опыт мы упускаем, что
+                    представители современных социальных резервов обнародованы.
+                  </p>
+                </div>
+                <div class="recomendation__author">
+                  <p class="recomendation__text recomendation__text--right">
+                    Иванов Иван
+                    <br />
+                    Генеральный директор ООО “ААА”
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.webp    1x,
+                        ./images/opt/recomend-icon-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.png    1x,
+                        ./images/opt/recomend-icon-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.webp    1x,
+                        ./images/opt/recomend-icon-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.png    1x,
+                        ./images/opt/recomend-icon-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/opt/recomend-icon-mobile.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="recomendation__item recomendation__item--hidden">
+              <div class="recomendation__block-item">
+                <div class="recomendation__block">
+                  <p class="recomendation__title">
+                    Очень хорошие пироженки и трубочки, рекомендую
+                  </p>
+                  <p class="recomendation__text">
+                    Являясь всего лишь частью общей картины, активно
+                    развивающиеся страны третьего мира, вне зависимости от их
+                    уровня, должны быть указаны как претенденты на роль ключевых
+                    факторов.
+                  </p>
+                </div>
+                <div class="recomendation__author">
+                  <p class="recomendation__text recomendation__text--right">
+                    Иванов Иван
+                    <br />
+                    Генеральный директор ООО “ААА”
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.webp    1x,
+                        ./images/opt/recomend-icon-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-desktop.png    1x,
+                        ./images/opt/recomend-icon-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.webp    1x,
+                        ./images/opt/recomend-icon-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/opt/recomend-icon-mobile.png    1x,
+                        ./images/opt/recomend-icon-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/opt/recomend-icon-mobile.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="pages-nav pages-nav--disabled">
+            <li class="pages-nav__item">
+              <button
+                class="pages-nav__button pages-nav__button--active"
+                type="button"
+              ></button>
+            </li>
+            <li class="pages-nav__item">
+              <button class="pages-nav__button" type="button"></button>
+            </li>
+            <li class="pages-nav__item">
+              <button class="pages-nav__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-partners">
+        <div class="container">
+          <ul class="psrtners__list">
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client1-desktop.webp    1x,
+                    ./images/corporation-set/client1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client1-desktop.jpg    1x,
+                    ./images/corporation-set/client1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client1-mobile.webp    1x,
+                    ./images/corporation-set/client1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client1-mobile.jpg    1x,
+                    ./images/corporation-set/client1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client1-mobile.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client2-desktop.webp    1x,
+                    ./images/corporation-set/client2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client2-desktop.jpg    1x,
+                    ./images/corporation-set/client2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client2-mobile.webp    1x,
+                    ./images/corporation-set/client2-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client2-mobile.jpg    1x,
+                    ./images/corporation-set/client2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client2-mobile.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client3-desktop.webp    1x,
+                    ./images/corporation-set/client3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client3-desktop.jpg    1x,
+                    ./images/corporation-set/client3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client3-mobile.webp    1x,
+                    ./images/corporation-set/client3-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client3-mobile.jpg    1x,
+                    ./images/corporation-set/client3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client3-mobile.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client4-desktop.webp    1x,
+                    ./images/corporation-set/client4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client4-desktop.jpg    1x,
+                    ./images/corporation-set/client4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client4-mobile.webp    1x,
+                    ./images/corporation-set/client4-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client4-mobile.jpg    1x,
+                    ./images/corporation-set/client4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client4-mobile.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client5-desktop.webp    1x,
+                    ./images/corporation-set/client5-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client5-desktop.jpg    1x,
+                    ./images/corporation-set/client5-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client5-mobile.webp    1x,
+                    ./images/corporation-set/client5-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client5-mobile.jpg    1x,
+                    ./images/corporation-set/client5-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client5-mobile.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="partners__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/corporation-set/client6-desktop.webp    1x,
+                    ./images/corporation-set/client6-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client6-desktop.jpg    1x,
+                    ./images/corporation-set/client6-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client6-mobile.webp    1x,
+                    ./images/corporation-set/client6-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/corporation-set/client6-mobile.jpg    1x,
+                    ./images/corporation-set/client6-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/corporation-set/client6-mobile.jpg" alt="" />
+              </picture>
+            </li>
+          </ul>
+          <ul class="pages-nav">
+            <li class="pages-nav__item">
+              <button
+                class="pages-nav__button pages-nav__button--active"
+                type="button"
+              ></button>
+            </li>
+            <li class="pages-nav__item">
+              <button class="pages-nav__button" type="button"></button>
+            </li>
+            <li class="pages-nav__item">
+              <button class="pages-nav__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <ul class="footer-advantages">
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="37" height="33">
+                  <use href="./images/icons.svg#heart-macaroon"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                Готовим вручную и с любовью
+              </p>
+            </li>
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="43" height="29">
+                  <use href="./images/icons.svg#car-macaroon"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                Доставим в день заказа
+              </p>
+            </li>
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="40" height="33">
+                  <use href="./images/icons.svg#nut"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                100%
+                <br />
+                миндальная мука и натуральные ингредиенты
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-copyright">
+            <li class="footer-copyright__item">
+              <p class="footer-copyright__text">
+                &copy; 2021 Макароншоп
+                <br />
+                ООО "Квантум", Санкт-Петербург,
+                <br />
+                улица Маршала Тухачевского, 22
+              </p>
+            </li>
+            <li class="footer-copyright__item footer-copyright__item--hidden">
+              <a href="tel:+78123098288" class="footer-copyright__phone">
+                +7 (812) 309 82 88
+              </a>
+              <p class="footer-copyright__text footer-copyright__text--right">
+                с 9:00 до 21:00
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-menu">
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">Информация</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">О компании</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">
+                  Гарантии вкуса и свежести
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Доставка и оплата</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">Каталог</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Каталог десертов</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Готовые наборы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Собрать свой набор</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Акции</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">ДЛЯ БИЗНЕСА</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Корпоративные подарки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Для юридических лиц</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Оповикам</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer-block footer-block--right">
+          <a href="tel:+78123098288" class="footer-phone">+7 (812) 309 82 88</a>
+          <p class="footer-text">с 9:00 до 21:00</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="15" height="15">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="18" height="32">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="25" height="20">
+                  <use href="./images/icons.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop" data-backdrop>
+      <div class="modal-add-basket" data-modal-basket>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-basket
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Товар добавлен в корзину</h2>
+        <p class="modal-text">Набор “Сердце” добавлен в корзину.</p>
+        <div class="modal-block-button">
+          <button class="sets-all-button" type="button">
+            Оформить сейчас
+          </button>
+          <button class="sets-all-button" type="button">
+            Продолжить покупки
+          </button>
+        </div>
+      </div>
+      <div class="modal-catalog" data-modal-catalog>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-catalog
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          Заказать расчёт или отправить запрос на сотрудничество
+        </h2>
+        <form class="form-catalog" method="POST">
+          <div class="form-catalog__block-input">
+            <label class="form-catalog__label">
+              Ваше имя*
+              <input
+                type="text"
+                class="form-catalog__input"
+                placeholder="Укажите имя"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+                title="Ivan / Иван / Іван"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Ваш телефон*
+              <input
+                type="tel"
+                class="form-catalog__input"
+                placeholder="+38(___)___-__-__"
+                pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                title="+38(099)123-45-67 / +380991234567"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Название компании
+              <input type="text" class="form-catalog__input" />
+            </label>
+            <label class="form-catalog__label">
+              E-mail
+              <input type="email" class="form-catalog__input" />
+            </label>
+          </div>
+          <label class="form-catalog__label form-catalog__label--long">
+            Добавить комментарий
+            <textarea class="form-catalog__textarea"></textarea>
+          </label>
+          <button class="sets-all-button form-catalog__button" type="submit">
+            Заказать расчёт
+          </button>
+          <p class="form-catalog__info">
+            Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+            <a href="#" class="form-catalog__link">Договором оферты</a>
+            и разрешаю обработку моих персональных данных в соответствии с
+            <a href="#" class="form-catalog__link">
+              Политикой конфиденциальности
+            </a>
+          </p>
+        </form>
+      </div>
+      <div class="modal-catalog-all" data-modal-catalog-all>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-catalog-all
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          Скачать весь каталог подарков
+        </h2>
+        <form class="form-catalog" method="POST">
+          <div class="form-catalog__block-input">
+            <label class="form-catalog__label">
+              Ваше имя*
+              <input
+                type="text"
+                class="form-catalog__input"
+                placeholder="Укажите имя"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+                title="Ivan / Иван / Іван"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Ваш телефон*
+              <input
+                type="tel"
+                class="form-catalog__input"
+                placeholder="+38(___)___-__-__"
+                pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                title="+38(099)123-45-67 / +380991234567"
+                required
+              />
+            </label>
+            <label class="form-catalog__label">
+              Название компании
+              <input type="text" class="form-catalog__input" />
+            </label>
+            <label class="form-catalog__label">
+              E-mail
+              <input type="email" class="form-catalog__input" />
+            </label>
+          </div>
+          <button class="sets-all-button form-catalog__button" type="submit">
+            Заказать расчёт
+          </button>
+          <p class="form-catalog__info">
+            Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+            <a href="#" class="form-catalog__link">Договором оферты</a>
+            и разрешаю обработку моих персональных данных в соответствии с
+            <a href="#" class="form-catalog__link">
+              Политикой конфиденциальности
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/lists.js"></script>
+  </body>
+</html>
