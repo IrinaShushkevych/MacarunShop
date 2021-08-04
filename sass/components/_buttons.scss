@@ -36,7 +36,8 @@
     margin-top: 30px;
   }
 
-  .opt-hero & {
+  .opt-hero &,
+  .wedding-hero & {
     width: 190px;
     &:not(:last-child) {
       margin-bottom: 8px;
@@ -67,7 +68,8 @@
       margin-top: 32px;
     }
 
-    .opt-hero & {
+    .opt-hero &,
+    .wedding-hero & {
       width: 230px;
       &:not(:last-child) {
         margin-bottom: 0;

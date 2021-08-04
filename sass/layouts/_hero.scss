@@ -29,7 +29,8 @@
     }
   }
 
-  .opt-hero & {
+  .opt-hero &,
+  .wedding-hero & {
     text-align: center;
     margin-bottom: 14px;
 
@@ -50,7 +51,8 @@
       }
     }
 
-    .opt-hero & {
+    .opt-hero &,
+    .wedding-hero & {
       margin-top: 0;
       &--second {
         @include fonts($font-accent, 400, 18px, 1.22);

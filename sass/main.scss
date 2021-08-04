@@ -25,6 +25,7 @@
 @import './layouts/delivery';
 @import './layouts/contacts';
 @import './layouts/opt';
+@import './layouts/wedding';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
