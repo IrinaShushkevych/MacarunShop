@@ -12,6 +12,27 @@
     display: none;
   }
 
+  &--accent {
+    border-color: $color-accent;
+  }
+
+  &--accent-fill {
+    border-color: $color-accent;
+    background-color: $color-accent;
+    color: $color-accent_text;
+  }
+  &--accent-fill:hover,
+  &--accent-fill:focus {
+    background-color: $color-button-accent-hover;
+    border-color: $color-button-accent-hover;
+  }
+  &--disabled {
+    background-color: $border-set;
+    border-color: $border-set;
+    color: $color-accent_text;
+    @include fonts($font-accent, 600, 13px, 1.23);
+  }
+
   .deserts-hero & {
     width: 155px;
     &:not(:last-child) {
@@ -44,6 +65,10 @@
     }
   }
 
+  .total-order__block-button & {
+    width: 84px;
+  }
+
   &:hover,
   &:focus {
     color: $color-accent_text;
@@ -74,6 +99,13 @@
       &:not(:last-child) {
         margin-bottom: 0;
         margin-right: 24px;
+      }
+    }
+
+    .total-order & {
+      width: 222px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
       }
     }
   }

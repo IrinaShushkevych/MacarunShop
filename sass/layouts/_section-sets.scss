@@ -8,6 +8,7 @@
 
     .section-count & {
       justify-content: center;
+      margin-right: 32px;
     }
   }
 }
@@ -51,10 +52,6 @@
         margin-right: 30px;
       }
     }
-
-    .section-count & {
-      width: calc((100% - 3 * 30px) / 4);
-    }
   }
 }
 
@@ -87,8 +84,15 @@
   font-size: 10px;
   margin: 0 8px 10px;
 
+  .section-count & {
+    margin-bottom: 12px;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($font-accent, 400, 14px, 1.2);
+    .section-count & {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -146,5 +150,49 @@
     display: inline-block;
     @include fonts($font, 600, 14px, 1.21);
     margin-left: 12px;
+  }
+}
+
+.sets_counter {
+  @include flex-center;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-top: auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    margin-top: auto;
+    border-top: 1px solid $border-set;
+  }
+}
+
+.sets__counter-button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid $border-set;
+  border-radius: 3px;
+  @include fonts($font-accent, 800, 18px, 1.22);
+  @include flex-center;
+
+  &--no-border {
+    border: transparent;
+    opacity: 0.3;
+    font-size: 12px;
+    margin-left: 14px;
+  }
+}
+
+.sets__counter-text {
+  padding-left: 4px;
+  padding-right: 4px;
+  @include fonts($font-accent, 600, 14px, 1.21);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 14px;
+    padding-right: 14px;
+    @include fonts($font-accent, 600, 16px, 1.19);
   }
 }
