@@ -33,6 +33,10 @@
     @include fonts($font-accent, 600, 13px, 1.23);
   }
 
+  &--text-accent {
+    color: $border-button;
+  }
+
   .deserts-hero & {
     width: 155px;
     &:not(:last-child) {
@@ -107,6 +111,9 @@
       &:not(:last-child) {
         margin-bottom: 8px;
       }
+    }
+    .section-count--finaly & {
+      width: 100%;
     }
   }
 }

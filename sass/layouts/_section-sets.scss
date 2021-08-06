@@ -10,6 +10,9 @@
       justify-content: center;
       margin-right: 32px;
     }
+    .section-count & {
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -52,6 +55,15 @@
         margin-right: 30px;
       }
     }
+    .section-count-printed & {
+      width: calc((100% - 4 * 30px) / 5);
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(5n)) {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
@@ -59,6 +71,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.sets__link-text {
+  color: $border-button;
+  @include fonts($font, 600, 14px, 1.2);
+  margin-bottom: 14px;
 }
 
 .sets__block-img {
@@ -194,5 +212,82 @@
     padding-left: 14px;
     padding-right: 14px;
     @include fonts($font-accent, 600, 16px, 1.19);
+  }
+}
+
+.sets__select-input {
+  width: 270px;
+  margin-bottom: 30px;
+  padding: 12px 40px 10px 17px;
+  @include fonts($font-accent, 400, 16px, 1.19);
+}
+
+.sets__select-label {
+  position: relative;
+}
+
+.sets__button-order {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.sets__order-list {
+  @media screen and (min-width: 768px) {
+    @include flex-center;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+  }
+}
+
+.sets__order-item {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 13px) / 3);
+    margin-bottom: 15px;
+    &:not(:nth-child(3n)) {
+      margin-right: 13px;
+    }
+  }
+}
+
+.sets__order-close {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  background-color: $color-backdrop;
+  border-radius: 50%;
+}
+
+.sets__order-close-icon {
+  width: 10px;
+  height: 10px;
+  fill: $color-accent_text;
+}
+
+.sets__block-download {
+  padding: 19px 24px 12px;
+  text-align: center;
+  border-bottom: 1px solid $border-set;
+  &--hidden {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.sets__download-img {
+  width: 48px;
+  height: 48px;
+  @media screen and (min-width: 768px) {
+    width: 72px;
+    height: 72px;
   }
 }

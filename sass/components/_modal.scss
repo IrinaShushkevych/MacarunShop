@@ -32,6 +32,10 @@
   visibility: hidden;
   pointer-events: none;
 
+  &--assembleder {
+    top: 0;
+  }
+
   &.is-open {
     opacity: 1;
     visibility: visible;
@@ -98,9 +102,38 @@
   @include fonts($font, 600, 16px, 1.25);
   text-align: center;
   margin-bottom: 16px;
+
+  &--accent {
+    color: $color-accent;
+  }
+  &--big {
+    @include fonts($font, 600, 18px, 1.22);
+    margin-bottom: 35px;
+  }
+  &--small {
+    @include fonts($font, 600, 14px, 1.21);
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  &--total {
+    margin-top: 16px;
+    margin-bottom: 36px;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($font, 600, 30px, 1.23);
     margin-bottom: 24px;
+    &--big {
+      margin-bottom: 26px;
+    }
+    &--small {
+      @include fonts($font, 600, 18px, 1.22);
+      margin-bottom: 12px;
+    }
+    &--total {
+      margin-top: 30px;
+      margin-bottom: 38px;
+    }
   }
 }
 
@@ -108,12 +141,23 @@
   @include fonts($font-accent, 400, 14px, 1.2);
   text-align: center;
   margin-bottom: 30px;
+
+  &--small {
+    @include fonts($font-accent, 400, 12px, 1.25);
+    margin: 4px;
+    text-align: left;
+  }
+
   @media screen and (min-width: 768px) {
     @include fonts($font-accent, 400, 16px, 1.19);
     margin-bottom: 38px;
     .section-form.form-wedding & {
       @include fonts($font-accent, 400, 18px, 1.22);
       text-align-last: left;
+    }
+    &--small {
+      @include fonts($font-accent, 400, 14px, 1.43);
+      margin: 6px;
     }
   }
 }
@@ -275,4 +319,32 @@
 .form-catalog__link {
   display: inline;
   color: $border-button;
+}
+
+.modal-order-assemble {
+  position: relative;
+  width: 288px;
+  height: 410px;
+  margin: 0;
+  padding: 30px 14px;
+  padding-bottom: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-accent_text;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 570px;
+    height: 490px;
+    padding: 46px 46px 35px;
+  }
 }

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakaronShop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-messages">
+          <ul class="header-messages__list">
+            <li class="header-messages__item">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <span class="header-messages__block-img">
+                  <img
+                    src="./images/message/message-nuts.svg"
+                    alt="Миндальные орехи"
+                    class="header-messages__icon"
+                    width="32"
+                    height="31"
+                  />
+                  <img
+                    src="./images/message/message-nuts-number.svg"
+                    alt="100%"
+                    class="header-messages__icon header-messages__icon--absolut"
+                    width="32"
+                    height="31"
+                  />
+                </span>
+                МИНДАЛЬНАЯ МУКА И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-macaroon.svg"
+                  alt="Макарун"
+                  class="header-messages__icon"
+                  width="42"
+                  height="40"
+                />
+                ВСЕГДА СВЕЖЕЕ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-box.svg"
+                  alt="Коробка с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="35"
+                />
+                ОПТОВЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-car.svg"
+                  alt="Машина с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="31"
+                />
+                ДОСТАВКА В ДЕНЬ ЗАКАЗА
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gamburger-menu">
+          <input
+            type="checkbox"
+            id="gamburger-menu-input"
+            class="gamburger-menu__checkbox"
+          />
+          <label class="gamburger-menu__button" for="gamburger-menu-input">
+            <!-- <span class="gamburger-menu__icon"></span> -->
+            <span class="gamburger-menu__icon gamburger-menu__icon--top"></span>
+            <span class="gamburger-menu__icon"></span>
+            <span
+              class="gamburger-menu__icon gamburger-menu__icon--bottom"
+            ></span>
+          </label>
+          <div class="logo">
+            <a class="gamburger-menu__logo" href="">
+              <img
+                class="gamburger-menu__logo-head"
+                src="./images/logo-head.svg"
+                alt="логотип"
+                width="37"
+                height="37"
+              />
+              <img
+                class="gamburger-menu__logo-text"
+                src="./images/logo-text.svg"
+                alt="логотип"
+                width="55"
+                height="26"
+              />
+              <img
+                class="gamburger-menu__logo-batterfly"
+                src="./images/logo-batterfly.svg"
+                alt="логотип"
+                width="8"
+                height="5"
+              />
+            </a>
+          </div>
+          <a class="gamburger-menu__cart gamburger-menu__cart--mobile" href="">
+            <div class="gamburger-menu__cart-block">
+              <img src="./images/cart.svg" alt="Корзина" />
+              <span class="gamburger-menu__order">0</span>
+            </div>
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="./sets.html" class="navigation__link">
+                  Готовые наборы
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Собрать свой набор</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  Акции
+                  <span class="round-block">%</span>
+                </a>
+              </li>
+
+              <li class="navigation__item navigation__item--desktop">
+                <div class="navigation__logo">
+                  <a class="gamburger-menu__logo" href="">
+                    <img
+                      class="gamburger-menu__logo-head"
+                      src="./images/logo-head.svg"
+                      alt="логотип"
+                    />
+                    <img
+                      class="gamburger-menu__logo-text"
+                      src="./images/logo-text.svg"
+                      alt="логотип"
+                    />
+                    <img
+                      class="gamburger-menu__logo-batterfly"
+                      src="./images/logo-batterfly.svg"
+                      alt="логотип"
+                    />
+                  </a>
+                </div>
+              </li>
+
+              <li class="navigation__item">
+                <a href="./desserts.html" class="navigation__link">
+                  Каталог десертов
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="./assemble-present.html" class="navigation__link">
+                  Корпоративные подарки
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="./opt.html" class="navigation__link">Оптовикам</a>
+              </li>
+            </ul>
+            <div class="navigation__block">
+              <ul class="navigation__services">
+                <li class="navigation__item-service">
+                  <a href="./wedding.html" class="navigation__link-service">
+                    Свадебные предложения
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="" class="navigation__link-service">
+                    Наборы с печатью
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="./garantee.html" class="navigation__link-service">
+                    Гарантии вкуса и свежести
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="./delivery.html" class="navigation__link-service">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="navigation__item-service">
+                  <a href="./contacts.html" class="navigation__link-service">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+              <ul class="navigation__contacts">
+                <li class="navigation__item-contacts">
+                  <a
+                    href="tel:88123098288"
+                    class="navigation__link-contacts navigation__link-contacts--big"
+                  >
+                    <img
+                      src="./images/phone.svg"
+                      alt="телефон"
+                      width="11"
+                      height="18"
+                    />
+                    8 812 309-82-88
+                  </a>
+                </li>
+                <li
+                  class="navigation__item-contacts navigation__item-contacts--hidden"
+                >
+                  <a class="gamburger-menu__cart" href="">
+                    <div class="gamburger-menu__cart-block">
+                      <img src="./images/cart.svg" alt="Корзина" />
+                      <span class="gamburger-menu__order">0</span>
+                    </div>
+                    <span>В корзине (0 товаров)</span>
+                  </a>
+                </li>
+                <li class="navigation__item-contacts">
+                  <ul class="social-list">
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="15" height="15">
+                          <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="18" height="32">
+                          <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="25" height="20">
+                          <use href="./images/icons.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="header-bottom"></div>
+      </div>
+    </header>
+    <main>
+      <section class="assemble-set-header">
+        <div class="container">
+          <div class="block-navigation">
+            <p class="block-navigation__path">
+              <a href="./index.html" class="block-navigation__link">Главная</a>
+              <span class="block-navigation__arrow">&gt;</span>
+              <a href="./assemble_set.html" class="block-navigation__link">
+                Собрать набор
+              </a>
+              <span class="block-navigation__arrow">&gt;</span>
+              <a
+                href="./assemble_set.html"
+                class="block-navigation__link block-navigation__link--accent"
+              >
+                Выбрать количество
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-count">
+        <h1 class="section-title">Выберите количество</h1>
+        <ul class="sets">
+          <li class="sets__item">
+            <div class="sets__link">
+              <a href="./printed_set-img.html">
+                <div class="sets__block-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.webp    1x,
+                        ./images/printed/count1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.png    1x,
+                        ./images/printed/count1-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.webp    1x,
+                        ./images/printed/count1-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      src="./images/printed/count1-mobile.jpg"
+                      alt=""
+                      class="sets__img"
+                    />
+                  </picture>
+                </div>
+                <h3 class="sets__title">
+                  Набор из 9 макарон с индивидуальным дизайном
+                </h3>
+              </a>
+              <div class="sets_block-order">
+                <p class="sets__price">950 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="sets__item">
+            <div class="sets__link">
+              <a href="./printed_set-img.html">
+                <div class="sets__block-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.webp    1x,
+                        ./images/printed/count1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.png    1x,
+                        ./images/printed/count1-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.webp    1x,
+                        ./images/printed/count1-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      src="./images/printed/count1-mobile.png"
+                      alt=""
+                      class="sets__img"
+                    />
+                  </picture>
+                </div>
+                <h3 class="sets__title">
+                  Набор из 16 макаронс индивидуальным дизайном
+                </h3>
+              </a>
+              <div class="sets_block-order">
+                <p class="sets__price">1500 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="sets__item">
+            <div class="sets__link">
+              <a href="./printed_set-img.html">
+                <div class="sets__block-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.webp    1x,
+                        ./images/printed/count1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-desktop.png    1x,
+                        ./images/printed/count1-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.webp    1x,
+                        ./images/printed/count1-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/printed/count1-mobile.png    1x,
+                        ./images/printed/count1-mobile@2x.png 2x
+                      "
+                      src="./images/printed/count1-mobile.png"
+                      alt=""
+                      class="sets__img"
+                    />
+                  </picture>
+                </div>
+                <h3 class="sets__title">
+                  Набор в форме сердца из 22 макарон с индивидуальным дизайном
+                </h3>
+              </a>
+              <div class="sets_block-order">
+                <p class="sets__price">2500 руб.б</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <ul class="footer-advantages">
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="37" height="33">
+                  <use href="./images/icons.svg#heart-macaroon"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                Готовим вручную и с любовью
+              </p>
+            </li>
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="43" height="29">
+                  <use href="./images/icons.svg#car-macaroon"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                Доставим в день заказа
+              </p>
+            </li>
+            <li class="footer-advantages__list">
+              <div class="footer-advantages__icon-block">
+                <svg class="footer-advantages__icon" width="40" height="33">
+                  <use href="./images/icons.svg#nut"></use>
+                </svg>
+              </div>
+              <p class="footer-advantages__list-text">
+                100%
+                <br />
+                миндальная мука и натуральные ингредиенты
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-copyright">
+            <li class="footer-copyright__item">
+              <p class="footer-copyright__text">
+                &copy; 2021 Макароншоп
+                <br />
+                ООО "Квантум", Санкт-Петербург,
+                <br />
+                улица Маршала Тухачевского, 22
+              </p>
+            </li>
+            <li class="footer-copyright__item footer-copyright__item--hidden">
+              <a href="tel:+78123098288" class="footer-copyright__phone">
+                +7 (812) 309 82 88
+              </a>
+              <p class="footer-copyright__text footer-copyright__text--right">
+                с 9:00 до 21:00
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-menu">
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">Информация</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">О компании</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">
+                  Гарантии вкуса и свежести
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Доставка и оплата</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">Каталог</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Каталог десертов</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Готовые наборы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Собрать свой набор</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Акции</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-menu__list">
+            <h3 class="footer-menu__title">ДЛЯ БИЗНЕСА</h3>
+            <ul class="footer-menu__item-menu">
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Корпоративные подарки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Для юридических лиц</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer-menu__link">Оповикам</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer-block footer-block--right">
+          <a href="tel:+78123098288" class="footer-phone">+7 (812) 309 82 88</a>
+          <p class="footer-text">с 9:00 до 21:00</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="15" height="15">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="18" height="32">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="25" height="20">
+                  <use href="./images/icons.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop" data-backdrop>
+      <div class="modal-add-basket" data-modal-basket>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-basket
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Товар добавлен в корзину</h2>
+        <p class="modal-text">Набор “Сердце” добавлен в корзину.</p>
+        <div class="modal-block-button">
+          <button class="sets-all-button" type="button">
+            Оформить сейчас
+          </button>
+          <button class="sets-all-button" type="button">
+            Продолжить покупки
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

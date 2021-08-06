@@ -95,15 +95,19 @@ body {
       margin-bottom: 56px;
     }
 
-    @media screen and (min-width: 768px) {
-      .section-delivery & {
-        padding-left: 734px;
-        padding-right: 230px;
-        text-align: left;
-        margin-bottom: 17px;
-        font-weight: 600;
-      }
+    // @media screen and (min-width: 768px) {
+    .section-delivery & {
+      padding-left: 734px;
+      padding-right: 230px;
+      text-align: left;
+      margin-bottom: 17px;
+      font-weight: 600;
     }
+
+    .section-count-printed & {
+      margin-bottom: 10px;
+    }
+    // }
   }
 }
 
@@ -118,11 +122,19 @@ body {
     margin-bottom: 40px;
   }
 
+  .section-count-printed & {
+    margin-bottom: 14px;
+  }
+
   @media screen and (min-width: 768px) {
     .section-delivery & {
       padding-left: 734px;
       padding-right: 230px;
       text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .section-count-printed & {
       margin-bottom: 40px;
     }
   }
