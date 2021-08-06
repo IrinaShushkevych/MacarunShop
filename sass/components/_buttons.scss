@@ -37,6 +37,12 @@
     color: $border-button;
   }
 
+  &--font-accent {
+    background-color: $border-button;
+    color: $color-accent_text;
+    width: 172px;
+  }
+
   .deserts-hero & {
     width: 155px;
     &:not(:last-child) {
@@ -114,6 +120,11 @@
     }
     .section-count--finaly & {
       width: 100%;
+    }
+    &--font-accent {
+      background-color: $border-button;
+      color: $color-accent_text;
+      width: 172px;
     }
   }
 }

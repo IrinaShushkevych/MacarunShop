@@ -550,6 +550,11 @@ header .container {
 .sets-all-button--text-accent {
   color: #4e9dd3;
 }
+.sets-all-button--font-accent {
+  background-color: #4e9dd3;
+  color: #ffffff;
+  width: 172px;
+}
 .deserts-hero .sets-all-button {
   width: 155px;
 }
@@ -619,6 +624,11 @@ header .container {
   }
   .section-count--finaly .sets-all-button {
     width: 100%;
+  }
+  .sets-all-button--font-accent {
+    background-color: #4e9dd3;
+    color: #ffffff;
+    width: 172px;
   }
 }
 
@@ -4875,11 +4885,43 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #ededf0;
+  border: 1px solid #ededf0;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   .total-order__block-ordered {
     display: block;
   }
+}
+
+.total-order__block-select {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  text-align: center;
+  width: 270px;
+  padding: 20px 48px 16px;
+  background-color: #ffffff;
+}
+.total-order__block-select.is-hidden {
+  display: none;
+}
+
+.total-order__select-list {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.total-order__select-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.total-order__checkbox {
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .section-count__block {
