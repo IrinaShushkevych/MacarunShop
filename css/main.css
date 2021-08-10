@@ -522,6 +522,7 @@ header .container {
   background: transparent;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .sets-all-button--hidden {
   display: none;
@@ -589,6 +590,12 @@ header .container {
   background-color: #e7426a;
   border-color: #e7426a;
 }
+.sets-all-button--font-accent {
+  background-color: #4e9dd3;
+  color: #ffffff;
+  width: 90px;
+  font-size: 10px;
+}
 @media screen and (min-width: 768px) {
   .sets-all-button {
     width: 293px;
@@ -629,6 +636,7 @@ header .container {
     background-color: #4e9dd3;
     color: #ffffff;
     width: 172px;
+    font-size: 12px;
   }
 }
 
@@ -2385,13 +2393,24 @@ header .container {
 }
 
 .sets__select-input {
-  width: 270px;
-  margin-bottom: 30px;
-  padding: 12px 40px 10px 17px;
+  width: 140px;
+  margin-bottom: 10px;
+  padding: 6px 30px 6px 8px;
   font-family: "Proxima Nova", serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  font-size: 12px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .sets__select-input {
+    width: 270px;
+    margin-bottom: 30px;
+    padding: 12px 40px 10px 17px;
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+  }
 }
 
 .sets__select-label {
@@ -2400,38 +2419,57 @@ header .container {
 
 .sets__button-order {
   position: absolute;
-  top: -15px;
+  top: -10px;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .sets__button-order {
+    top: -15px;
+    width: 40px;
+    height: 40px;
+  }
+}
 
+.sets__order-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .sets__order-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: -15px;
   }
 }
 
 .sets__order-item {
   position: relative;
+  width: calc((100% - 4 * 8px) / 5);
+}
+.sets__order-item:not(:nth-child(5n)) {
+  margin-right: 8px;
+}
+.sets__order-item img {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .sets__order-item {
     width: calc((100% - 2 * 13px) / 3);
     margin-bottom: 15px;
+  }
+  .sets__order-item:not(:nth-child(5n)) {
+    margin-right: 0;
   }
   .sets__order-item:not(:nth-child(3n)) {
     margin-right: 13px;
@@ -2455,6 +2493,15 @@ header .container {
 }
 
 .sets__block-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 19px 24px 12px;
   text-align: center;
   border-bottom: 1px solid #ededf0;
@@ -2462,9 +2509,18 @@ header .container {
 .sets__block-download--hidden {
   display: none;
 }
+.sets__block-download--mobile {
+  height: 90px;
+  border: 1px solid #ededf0;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
 @media screen and (min-width: 768px) {
   .sets__block-download {
     display: block;
+  }
+  .sets__block-download--mobile {
+    display: none;
   }
 }
 
@@ -4696,7 +4752,7 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 14px 16px 10px 18px;
+  padding-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .total-order__block-count {
@@ -4767,8 +4823,6 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 14px;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .total-order__block-button {
@@ -4886,13 +4940,15 @@ header .container {
   display: flex;
   border-bottom: 1px solid #ededf0;
   border: 1px solid #ededf0;
-  text-align: center;
+  text-align: left;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .total-order__block-ordered {
     display: block;
+    text-align: center;
   }
 }
 
@@ -4901,12 +4957,26 @@ header .container {
   top: 200%;
   left: 0;
   text-align: center;
-  width: 270px;
-  padding: 20px 48px 16px;
+  width: 140px;
+  padding: 10px 12px 12px 25px;
   background-color: #ffffff;
+  border: 1px solid #ededf0;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: visible;
 }
 .total-order__block-select.is-hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  .total-order__block-select {
+    width: 270px;
+    padding: 20px 48px 16px;
+  }
 }
 
 .total-order__select-list {
@@ -4917,17 +4987,107 @@ header .container {
   margin-bottom: 20px;
 }
 
-.total-order__checkbox {
+.total-order__checkbox-label {
+  position: relative;
   font-family: "Proxima Nova", serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  font-size: 10px;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .total-order__checkbox-label {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.total-order__checkbox {
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
+.total-order__block-checkbox {
+  position: absolute;
+  top: 0;
+  left: -18px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ededf0;
+  background-color: #ffffff;
+}
+.total-order__checkbox:checked ~ .total-order__block-checkbox {
+  background-color: #4e9dd3;
+  border-color: #4e9dd3;
+  background-image: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .total-order__block-checkbox {
+    width: 18px;
+    height: 18px;
+    left: -30px;
+  }
+}
+
+.total-order__mobile-print-img-button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  color: #4e9dd3;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+}
+.total-order__mobile-print-img-button:not(:last-child) {
+  margin-right: 8px;
+}
+.total-order__mobile-print-img-button--hidden {
+  display: none;
 }
 
 .section-count__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.confidential-title {
+  margin-bottom: 18px;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+@media screen and (min-width: 768px) {
+  .confidential-title {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.confidential-text {
+  margin-bottom: 30px;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+}
+@media screen and (min-width: 768px) {
+  .confidential-text {
+    font-family: "Proxima Nova", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.37;
+  }
 }
 
 body {
@@ -4964,10 +5124,13 @@ body {
 .section-recomendation .section-title {
   margin-bottom: 48px;
 }
+.section-title .section-confidential {
+  margin-bottom: 40px;
+}
 @media screen and (min-width: 768px) {
   .section-title {
     font-family: Montserrat, serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 1.23;
     margin-bottom: 50px;
@@ -5002,6 +5165,9 @@ body {
   }
   .section-count-printed .section-title {
     margin-bottom: 10px;
+  }
+  .section-title .section-confidential {
+    margin-bottom: 74px;
   }
 }
 

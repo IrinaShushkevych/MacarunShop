@@ -1,0 +1,16 @@
+.confidential-title {
+  margin-bottom: 18px;
+  @include fonts($font, 600, 14px, 1.21);
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 600, 18px, 1.22);
+  }
+}
+
+.confidential-text {
+  margin-bottom: 30px;
+  @include fonts($font-accent, 400, 14px, 1.57);
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 16px, 1.37);
+  }
+}

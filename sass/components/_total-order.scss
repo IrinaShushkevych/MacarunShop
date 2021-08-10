@@ -20,7 +20,8 @@
 .total-order__block-count {
   border-bottom: 1px solid $border-set;
   display: flex;
-  padding: 14px 16px 10px 18px;
+  // padding: 14px 16px 10px 18px;
+  padding-right: 16px;
 
   @media screen and (min-width: 768px) {
     padding: 0;
@@ -65,8 +66,8 @@
 
 .total-order__block-button {
   @include flex-center;
-  margin-left: 14px;
-  margin-right: auto;
+  // margin-left: 14px;
+  // margin-right: auto;
   @media screen and (min-width: 768px) {
     display: none;
     &--big {
@@ -150,10 +151,12 @@
   display: flex;
   border-bottom: 1px solid $border-set;
   border: 1px solid $border-set;
-  text-align: center;
+  text-align: left;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 16px;
   @media screen and (min-width: 768px) {
     display: block;
+    text-align: center;
   }
 }
 
@@ -162,11 +165,26 @@
   top: 200%;
   left: 0;
   text-align: center;
-  width: 270px;
-  padding: 20px 48px 16px;
+  width: 140px;
+  padding: 10px 12px 12px 25px;
   background-color: $color-accent_text;
+  border: 1px solid $border-set;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  visibility: visible;
+  opacity: 1;
+  pointer-events: visible;
+
   &.is-hidden {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 270px;
+    padding: 20px 48px 16px;
   }
 }
 
@@ -178,6 +196,59 @@
   }
 }
 
+.total-order__checkbox-label {
+  position: relative;
+  @include fonts($font-accent, 400, 10px, 1.2);
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font-accent, 400, 16px, 1.19);
+  }
+}
+
 .total-order__checkbox {
-  @include fonts($font-accent, 400, 16px, 1.19);
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
+.total-order__block-checkbox {
+  position: absolute;
+  top: 0;
+  left: -18px;
+  width: 12px;
+  height: 12px;
+
+  border: 1px solid $border-set;
+  background-color: $color-accent_text;
+  .total-order__checkbox:checked ~ & {
+    background-color: $border-button;
+    border-color: $border-button;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+    left: -30px;
+  }
+}
+
+.total-order__mobile-print-img-button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  color: $border-button;
+  @include fonts($font, 600, 8px, 1.25);
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &--hidden {
+    display: none;
+  }
 }

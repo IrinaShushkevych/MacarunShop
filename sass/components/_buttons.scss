@@ -7,6 +7,7 @@
   background: transparent;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   &--hidden {
     display: none;
@@ -86,6 +87,13 @@
     border-color: $color-accent;
   }
 
+  &--font-accent {
+    background-color: $border-button;
+    color: $color-accent_text;
+    width: 90px;
+    font-size: 10px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 293px;
     @include fonts($font, 600, 14px, 1.2);
@@ -125,6 +133,7 @@
       background-color: $border-button;
       color: $color-accent_text;
       width: 172px;
+      font-size: 12px;
     }
   }
 }

@@ -28,6 +28,7 @@
 @import './layouts/wedding';
 @import './components/total-order';
 @import './layouts/assemble-set';
+@import './layouts/confidential';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -62,8 +63,12 @@ body {
     margin-bottom: 48px;
   }
 
+  .section-confidential {
+    margin-bottom: 40px;
+  }
+
   @media screen and (min-width: 768px) {
-    @include fonts($fs: 30px, $lh: 1.23);
+    @include fonts($fw: 600, $fs: 30px, $lh: 1.23);
     margin-bottom: 50px;
 
     .section-celebrated & {
@@ -106,6 +111,10 @@ body {
 
     .section-count-printed & {
       margin-bottom: 10px;
+    }
+
+    .section-confidential {
+      margin-bottom: 74px;
     }
     // }
   }

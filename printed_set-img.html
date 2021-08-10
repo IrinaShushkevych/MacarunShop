@@ -299,6 +299,182 @@
             <br />
             или выберите из нашей галереи
           </p>
+          <div class="sets__block-download sets__block-download--mobile">
+            <picture>
+              <source
+                srcset="
+                  ./images/printed/download-desktop.png    1x,
+                  ./images/printed/download-desktop@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/printed/download-mobile.png    1x,
+                  ./images/printed/download-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/printed/download-mobile.png"
+                alt=""
+                class="total-order__mobile-print-img-button total-order__mobile-print-img-button--hidden"
+              />
+            </picture>
+            <button
+              class="total-order__mobile-print-img-button total-order__mobile-print-img-button--hidden"
+              type="button"
+            >
+              Ввести текст
+            </button>
+            <ul class="sets__order-list">
+              <li class="sets__order-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/printed/select1-desktop.webp    1x,
+                      ./images/printed/select1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/printed/select1-desktop.png    1x,
+                      ./images/printed/select1-desktop@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./images/printed/select1-desktop.png"
+                    alt=""
+                    class="sets__order-img"
+                  />
+                </picture>
+                <button class="sets__order-close">
+                  <svg class="sets__order-close-icon">
+                    <use href="../images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sets__order-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/printed/select2-desktop.webp    1x,
+                      ./images/printed/select2-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/printed/select2-desktop.png    1x,
+                      ./images/printed/select2-desktop@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./images/printed/select2-desktop.png"
+                    alt=""
+                    class="sets__order-img"
+                  />
+                </picture>
+                <button class="sets__order-close">
+                  <svg class="sets__order-close-icon">
+                    <use href="../images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sets__order-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/printed/select3-desktop.webp    1x,
+                      ./images/printed/select3-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/printed/select3-desktop.png    1x,
+                      ./images/printed/select3-desktop@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./images/printed/select3-desktop.png"
+                    alt=""
+                    class="sets__order-img"
+                  />
+                </picture>
+                <button class="sets__order-close">
+                  <svg class="sets__order-close-icon">
+                    <use href="../images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sets__order-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/printed/select5-desktop.webp    1x,
+                      ./images/printed/select5-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/printed/select5-desktop.png    1x,
+                      ./images/printed/select5-desktop@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./images/printed/select5-desktop.png"
+                    alt=""
+                    class="sets__order-img"
+                  />
+                </picture>
+                <button class="sets__order-close">
+                  <svg class="sets__order-close-icon">
+                    <use href="../images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sets__order-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/printed/select-desktop.webp    1x,
+                      ./images/printed/select-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/printed/select-desktop.png    1x,
+                      ./images/printed/select-desktop@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./images/printed/select-desktop.png"
+                    alt=""
+                    class="sets__order-img"
+                  />
+                </picture>
+                <button class="sets__order-close">
+                  <svg class="sets__order-close-icon">
+                    <use href="../images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
           <div class="section-count__block">
             <div>
               <label for="" class="sets__select-label">
@@ -307,7 +483,7 @@
                   class="sets__select-input"
                   placeholder="Темы"
                 />
-                <button class="sets__button-order" data-button data-number="1">
+                <button class="sets__button-order" data-button-order>
                   <svg width="8" height="6">
                     <use
                       href="./images/icons.svg#arrow-down"
@@ -321,47 +497,89 @@
                     ></use>
                   </svg>
                 </button>
-                <div class="total-order__block-select is-hidden">
+                <div
+                  class="total-order__block-select is-hidden"
+                  data-modal-order
+                >
                   <ul class="total-order__select-list">
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" checked />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                          checked
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         День рождения
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Любовь
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" checked />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                          checked
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Мама
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" checked />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                          checked
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Для парня
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" checked />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                          checked
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Для девушки
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Свадьба
                       </label>
                     </li>
                     <li>
-                      <label class="total-order__checkbox">
-                        <input type="checkbox" name="category" />
+                      <label class="total-order__checkbox-label">
+                        <input
+                          type="checkbox"
+                          name="category"
+                          class="total-order__checkbox"
+                        />
+                        <div class="total-order__block-checkbox"></div>
                         Девичник
                       </label>
                     </li>
@@ -369,6 +587,7 @@
                   <button
                     class="sets-all-button sets-all-button--font-accent"
                     type="button"
+                    data-button-order
                   >
                     ПРИМЕНИТЬ
                   </button>
@@ -1245,7 +1464,7 @@
                 </div>
                 <div class="total-order__block-button">
                   <a
-                    href="./assemble_set-additionally.html"
+                    href="./print_set-additionally.html"
                     class="sets-all-button sets-all-button--accent-fill sets-all-button--disabled"
                     type="button"
                   >
@@ -1557,7 +1776,7 @@
                   Для продолжения количество макарон должно равняться 16 шт.
                 </p>
                 <a
-                  href="./assemble_set-additionally.html"
+                  href="./print_set-additionally.html"
                   class="sets-all-button sets-all-button--accent sets-all-button--disabled"
                   type="button"
                   data-modal-button-catalog-all
@@ -1735,6 +1954,6 @@
     </div>
 
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/printed.js"></script>
   </body>
 </html>
