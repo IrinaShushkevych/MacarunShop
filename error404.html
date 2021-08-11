@@ -15,6 +15,76 @@
   <body>
     <header>
       <div class="container">
+        <div class="header-messages">
+          <ul class="header-messages__list">
+            <li class="header-messages__item">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <span class="header-messages__block-img">
+                  <img
+                    src="./images/message/message-nuts.svg"
+                    alt="Миндальные орехи"
+                    class="header-messages__icon"
+                    width="32"
+                    height="31"
+                  />
+                  <img
+                    src="./images/message/message-nuts-number.svg"
+                    alt="100%"
+                    class="header-messages__icon header-messages__icon--absolut"
+                    width="32"
+                    height="31"
+                  />
+                </span>
+                МИНДАЛЬНАЯ МУКА И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-macaroon.svg"
+                  alt="Макарун"
+                  class="header-messages__icon"
+                  width="42"
+                  height="40"
+                />
+                ВСЕГДА СВЕЖЕЕ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-box.svg"
+                  alt="Коробка с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="35"
+                />
+                ОПТОВЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+            <li class="header-messages__item header-messages__item--hidden">
+              <button class="header-messages__button">&lt;</button>
+              <p class="header-messages__text">
+                <img
+                  src="./images/message/message-car.svg"
+                  alt="Машина с макаруном"
+                  class="header-messages__icon"
+                  width="44"
+                  height="31"
+                />
+                ДОСТАВКА В ДЕНЬ ЗАКАЗА
+              </p>
+              <button class="header-messages__button">&gt;</button>
+            </li>
+          </ul>
+        </div>
+
         <div class="gamburger-menu">
           <input
             type="checkbox"
@@ -63,10 +133,14 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="" class="navigation__link">Готовые наборы</a>
+                <a href="./sets.html" class="navigation__link">
+                  Готовые наборы
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Собрать свой набор</a>
+                <a href="./assemble_set.html" class="navigation__link">
+                  Собрать свой набор
+                </a>
               </li>
               <li class="navigation__item">
                 <a href="" class="navigation__link">
@@ -98,39 +172,45 @@
               </li>
 
               <li class="navigation__item">
-                <a href="" class="navigation__link">Каталог десертов</a>
+                <a href="./desserts.html" class="navigation__link">
+                  Каталог десертов
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Корпоративные подарки</a>
+                <a href="./corporation-present.html" class="navigation__link">
+                  Корпоративные подарки
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Оптовикам</a>
+                <a href="./opt.html" class="navigation__link">Оптовикам</a>
               </li>
             </ul>
             <div class="navigation__block">
               <ul class="navigation__services">
                 <li class="navigation__item-service">
-                  <a href="" class="navigation__link-service">
+                  <a href="./wedding.html" class="navigation__link-service">
                     Свадебные предложения
                   </a>
                 </li>
                 <li class="navigation__item-service">
-                  <a href="" class="navigation__link-service">
+                  <a href="./printed_set.html" class="navigation__link-service">
                     Наборы с печатью
                   </a>
                 </li>
                 <li class="navigation__item-service">
-                  <a href="" class="navigation__link-service">
+                  <a href="./garantee.html" class="navigation__link-service">
                     Гарантии вкуса и свежести
                   </a>
                 </li>
                 <li class="navigation__item-service">
-                  <a href="" class="navigation__link-service">
+                  <a href="./delivery.html" class="navigation__link-service">
                     Доставка и оплата
                   </a>
                 </li>
                 <li class="navigation__item-service">
-                  <a href="" class="navigation__link-service">Контакты</a>
+                  <a href="./contacts.html" class="navigation__link-service">
+                    Контакты
+                  </a>
                 </li>
               </ul>
               <ul class="navigation__contacts">
@@ -193,113 +273,17 @@
       </div>
     </header>
     <main>
-      <section class="delivery-header">
+      <section class="section-error">
         <div class="container">
-          <div class="block-navigation">
-            <p class="block-navigation__path">
-              <a href="./index.html" class="block-navigation__link">Главная</a>
-              <span class="block-navigation__arrow">&gt;</span>
-              <a
-                href="./index.html"
-                class="block-navigation__link block-navigation__link--accent"
-              >
-                Доставка и оплата
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section-delivery">
-        <div class="container">
-          <h1 class="section-title">Доставка и оплата</h1>
-          <p class="section-text">
-            Для наших покупателей доступны 2 способа доставки:
-            <span class="section-text--bold">курьерская доставка</span>
-            по Санкт-Петербургу в пределах КАД и
-            <span class="section-text--bold">самовывоз</span>
-            .
-          </p>
-          <ul class="delivery-list">
-            <li class="delivery-list__item">
-              <div class="delivery-list__block-text">
-                <p class="delivery-list__title">Курьерска доставка:</p>
-                <p class="delivery-list__text">
-                  Курьеры работают каждый день с 11 до 21 часа. Доставка макарон
-                  осуществляется только по Санкт-Петербургу в пределах кольцевой
-                  автомобильной дороги (КАД).
-                  <a
-                    href="#address"
-                    class="delivery-list__text delivery-list__text--accent"
-                  >
-                    Точная зона доставки
-                  </a>
-                  .
-                </p>
-                <p class="delivery-list__text">
-                  Если Вы готовы принять заказ в интервале с 12 до 17 часов или
-                  с 17 до 21 часа, то доставка будет стоить 300 рублей.
-                </p>
-                <p class="delivery-list__text">
-                  При заказе от 3000 рублей доставка БЕСПЛАТНАЯ.
-                </p>
-                <p class="delivery-list__text">
-                  При оформлении заказа до 15 часов возможна доставка в тот же
-                  день в промежутке с 17 до 21 часа.
-                </p>
-                <p class="delivery-list__text">
-                  Курьер предупредит Вас о своём прибытии за 30-40 минут.
-                </p>
-              </div>
-            </li>
-            <li class="delivery-list__item">
-              <div class="delivery-list__block-img"></div>
-              <div class="delivery-list__block-text">
-                <p class="delivery-list__title">Самовывоз</p>
-                <p class="delivery-list__text">
-                  Вы можете сделать заказ и забрать его самостоятельно с нашего
-                  производства по адресу: ул. Маршала Тухачевского 22 БЦ "Сова"
-                </p>
-                <p class="delivery-list__text">
-                  Заказ необходимо сделать до 20 часов, чтобы забрать его на
-                  следующий день в пункте самовывоза в любое удобное время в
-                  промежутке с 13 до 22 часов.
-                </p>
-                <p class="delivery-list__text">
-                  Оплатить заказ банковской картой можно заранее при оформлении.
-                  Непосредственно при получении банковской картой расплатиться
-                  нельзя.
-                </p>
-                <p class="delivery-list__title">Оплата</p>
-                <p class="delivery-list__text">
-                  Вы можете оплатить заказ при получении наличными или заранее
-                  оплатить заказ банковской картой. Для этого укажите выбранный
-                  способ при оформлении заказа.
-                </p>
-                <p class="delivery-list__text">
-                  Оплата банковской картой удобна, если вы хотите отправить
-                  десерты в подарок или не желаете возиться с наличными при
-                  получении заказа.
-                </p>
-                <p class="delivery-list__text">
-                  Если у Вас нет карты российского банка, мы можем принять
-                  оплату через платёжную систему PayPal.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="delivery-address" id="address">
-          <iframe
-            class="delivery-address__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.3581358462446!2d30.511778034909117!3d50.43304341227033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee32747026d%3A0x47c49641565a3c77!2sTsentr%20%22Dovira%22!5e0!3m2!1sru!2sua!4v1627560384438!5m2!1sru!2sua"
-            width="300"
-            height="225"
-            style="border: 0;"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <h1 class="section-text">Извините, страница не найдена</h1>
+
+          <a
+            href="./index.html"
+            type="button"
+            class="sets-all-button sets-all-button--accent"
+          >
+            Назад
+          </a>
         </div>
       </section>
     </main>
@@ -443,7 +427,31 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-backdrop>
+      <div class="modal-add-basket" data-modal-basket>
+        <button
+          type="button"
+          class="modal-add-basket__button-close"
+          data-modal-button-basket
+        >
+          <svg class="modal-add-basket__icon-close">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Товар добавлен в корзину</h2>
+        <p class="modal-text">Набор “Сердце” добавлен в корзину.</p>
+        <div class="modal-block-button">
+          <button class="sets-all-button" type="button">
+            Оформить сейчас
+          </button>
+          <button class="sets-all-button" type="button">
+            Продолжить покупки
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -417,6 +417,10 @@ header .container {
   padding-top: 40px;
   padding-bottom: 16px;
 }
+.section-error .container {
+  padding-top: 170px;
+  padding-bottom: 94px;
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1400px;
@@ -498,6 +502,10 @@ header .container {
   .section-recomendation .container {
     padding-top: 67px;
     padding-bottom: 24px;
+  }
+  .section-error .container {
+    padding-top: 109px;
+    padding-bottom: 60px;
   }
 }
 
@@ -5090,6 +5098,50 @@ header .container {
   }
 }
 
+.section-error {
+  background-image: url(../images/error/error404-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center 60%;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-error {
+    background-image: url(../images/error/error404-mobile@2x.png);
+  }
+}
+.section-error--dark {
+  color: #ffffff;
+  background-color: #49387a;
+  background-image: url(../images/error/error405-mobile.png);
+  background-position: center 40%;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-error--dark {
+    background-image: url(../images/error/error405-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-error {
+    background-position: center 60%;
+    background-image: url(../images/error/error404-desktop.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-error {
+    background-image: url(../images/error/error404-desktop@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-error--dark {
+    background-color: #49387a;
+    background-image: url(../images/error/error405-desktop.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-error--dark {
+    background-image: url(../images/error/error405-desktop@2x.png);
+  }
+}
+
 body {
   font-family: Montserrat, serif;
   font-weight: 400;
@@ -5187,6 +5239,14 @@ body {
 .section-count-printed .section-text {
   margin-bottom: 14px;
 }
+.section-error .section-text {
+  font-size: 14px;
+  margin-bottom: 182px;
+}
+.section-error--dark .section-text {
+  font-size: 14px;
+  margin-bottom: 290px;
+}
 @media screen and (min-width: 768px) {
   .section-delivery .section-text {
     padding-left: 734px;
@@ -5196,5 +5256,9 @@ body {
   }
   .section-count-printed .section-text {
     margin-bottom: 40px;
+  }
+  .section-error .section-text {
+    font-size: 20px;
+    margin-bottom: 356px;
   }
 }/*# sourceMappingURL=main.css.map */

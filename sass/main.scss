@@ -29,6 +29,7 @@
 @import './components/total-order';
 @import './layouts/assemble-set';
 @import './layouts/confidential';
+@import './layouts/error';
 
 body {
   @include fonts($font, 400, 10px, 1.2);
@@ -116,6 +117,7 @@ body {
     .section-confidential {
       margin-bottom: 74px;
     }
+
     // }
   }
 }
@@ -135,6 +137,16 @@ body {
     margin-bottom: 14px;
   }
 
+  .section-error & {
+    font-size: 14px;
+    margin-bottom: 182px;
+  }
+
+  .section-error--dark & {
+    font-size: 14px;
+    margin-bottom: 290px;
+  }
+
   @media screen and (min-width: 768px) {
     .section-delivery & {
       padding-left: 734px;
@@ -145,6 +157,11 @@ body {
 
     .section-count-printed & {
       margin-bottom: 40px;
+    }
+
+    .section-error & {
+      font-size: 20px;
+      margin-bottom: 356px;
     }
   }
 }

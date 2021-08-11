@@ -1,0 +1,48 @@
+.section-error {
+  background-image: url(../images/error/error404-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center 60%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/error/error404-mobile@2x.png);
+  }
+
+  &--dark {
+    color: $color-accent_text;
+    background-color: $bg-error;
+    background-image: url(../images/error/error405-mobile.png);
+    background-position: center 40%;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/error/error405-mobile@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-position: center 60%;
+    background-image: url(../images/error/error404-desktop.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/error/error404-desktop@2x.png);
+    }
+
+    &--dark {
+      background-color: $bg-error;
+      background-image: url(../images/error/error405-desktop.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/error/error405-desktop@2x.png);
+      }
+    }
+  }
+}
