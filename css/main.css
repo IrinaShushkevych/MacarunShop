@@ -3975,6 +3975,7 @@ header .container {
   background-image: url(../images/corporation-set/hero-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .corporation-hero {
@@ -4227,6 +4228,7 @@ header .container {
   background-image: url(../images/delivery/delivery-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% -90px;
+  background-size: contain;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .delivery-list__item:nth-child(2n-1) {
@@ -4239,7 +4241,8 @@ header .container {
     padding-right: 230px;
     background-image: url(../images/delivery/delivery-desktop.png);
     background-repeat: no-repeat;
-    background-position: 40px 0;
+    background-position: 80px 0;
+    background-size: 50%;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -4250,7 +4253,8 @@ header .container {
 .delivery-list__item:nth-child(2n) {
   background-image: url(../images/delivery/delivery1-mobile.png);
   background-repeat: no-repeat;
-  background-position: 50% 50px;
+  background-position: 50% -14px;
+  background-size: 80%;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .delivery-list__item:nth-child(2n) {
@@ -4264,6 +4268,7 @@ header .container {
     background-image: url(../images/delivery/delivery1-desktop.png);
     background-repeat: no-repeat;
     background-position: 75% 60px;
+    background-size: 26%;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -4323,11 +4328,31 @@ header .container {
   height: 100%;
 }
 
+.delivery-card-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delivery-card-list__icon {
+  margin-right: 26px;
+  width: 46px;
+  height: 46px;
+}
+
+.delivery-card-list__text {
+  text-align: left;
+}
+
 .section-contact .container {
   padding-bottom: 284px;
   background-image: url(../images/delivery/contact-mobile.png);
   background-repeat: no-repeat;
-  background-position: 50% 84%;
+  background-position: 50% 100%;
+  background-size: 60%;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-contact .container {
@@ -4342,6 +4367,7 @@ header .container {
     background-image: url(../images/delivery/contact-desktop.png);
     background-repeat: no-repeat;
     background-position: 20% 0;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {

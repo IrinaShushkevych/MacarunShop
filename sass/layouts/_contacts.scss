@@ -4,7 +4,9 @@
   background-image: url(../images/delivery/contact-mobile.png);
   background-repeat: no-repeat;
 
-  background-position: 50% 84%;
+  background-position: 50% 100%;
+  background-size: 60%;
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -19,6 +21,8 @@
     background-image: url(../images/delivery/contact-desktop.png);
     background-repeat: no-repeat;
     background-position: 20% 0;
+    background-size: contain;
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
